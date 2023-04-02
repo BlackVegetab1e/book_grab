@@ -1,0 +1,7 @@
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/book_work_topic_service.cpp:[m[K In function ‘[01m[Kgeometry_msgs::Pose get_now_pose(const Pose&)[m[K’:
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/book_work_topic_service.cpp:70:101:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[Ktf2_ros::Buffer::lookupTransform(std::__cxx11::basic_string<char>(((const char*)"dummy"), std::allocator<char>()), std::__cxx11::basic_string<char>(((const char*)"real_grabber_frame"), std::allocator<char>()), ros::Time((double)0), ros::Duration((double)1)).geometry_msgs::TransformStamped_<std::allocator<void> >::transform[m[K’ from ‘[01m[Kgeometry_msgs::TransformStamped_<std::allocator<void> >::_transform_type {aka geometry_msgs::Transform_<std::allocator<void> >}[m[K’ to ‘[01m[Kgeometry_msgs::Pose {aka geometry_msgs::Pose_<std::allocator<void> >}[m[K’
+     return [01;31m[Kbuffer_ptr->lookupTransform("dummy","real_grabber_frame",ros::Time(0), ros::Duration(1)).transform[m[K;
+            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/book_work_topic_service.dir/src/book_work_topic_service.cpp.o] Error 1
+make[1]: *** [CMakeFiles/book_work_topic_service.dir/all] Error 2
+make: *** [all] Error 2

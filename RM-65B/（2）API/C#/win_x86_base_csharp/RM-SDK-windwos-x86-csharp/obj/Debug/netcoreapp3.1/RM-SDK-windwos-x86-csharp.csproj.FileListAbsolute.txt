@@ -1,0 +1,14 @@
+D:\0.working\C#\RM-SDK-windwos-x86-csharp\RM-SDK-windwos-x86-csharp\bin\Debug\netcoreapp3.1\RM-SDK-windwos-x86-csharp.exe
+D:\0.working\C#\RM-SDK-windwos-x86-csharp\RM-SDK-windwos-x86-csharp\bin\Debug\netcoreapp3.1\RM-SDK-windwos-x86-csharp.deps.json
+D:\0.working\C#\RM-SDK-windwos-x86-csharp\RM-SDK-windwos-x86-csharp\bin\Debug\netcoreapp3.1\RM-SDK-windwos-x86-csharp.runtimeconfig.json
+D:\0.working\C#\RM-SDK-windwos-x86-csharp\RM-SDK-windwos-x86-csharp\bin\Debug\netcoreapp3.1\RM-SDK-windwos-x86-csharp.runtimeconfig.dev.json
+D:\0.working\C#\RM-SDK-windwos-x86-csharp\RM-SDK-windwos-x86-csharp\bin\Debug\netcoreapp3.1\RM-SDK-windwos-x86-csharp.dll
+D:\0.working\C#\RM-SDK-windwos-x86-csharp\RM-SDK-windwos-x86-csharp\bin\Debug\netcoreapp3.1\RM-SDK-windwos-x86-csharp.pdb
+D:\0.working\C#\RM-SDK-windwos-x86-csharp\RM-SDK-windwos-x86-csharp\obj\Debug\netcoreapp3.1\RM-SDK-windwos-x86-csharp.GeneratedMSBuildEditorConfig.editorconfig
+D:\0.working\C#\RM-SDK-windwos-x86-csharp\RM-SDK-windwos-x86-csharp\obj\Debug\netcoreapp3.1\RM-SDK-windwos-x86-csharp.AssemblyInfoInputs.cache
+D:\0.working\C#\RM-SDK-windwos-x86-csharp\RM-SDK-windwos-x86-csharp\obj\Debug\netcoreapp3.1\RM-SDK-windwos-x86-csharp.AssemblyInfo.cs
+D:\0.working\C#\RM-SDK-windwos-x86-csharp\RM-SDK-windwos-x86-csharp\obj\Debug\netcoreapp3.1\RM-SDK-windwos-x86-csharp.csproj.CoreCompileInputs.cache
+D:\0.working\C#\RM-SDK-windwos-x86-csharp\RM-SDK-windwos-x86-csharp\obj\Debug\netcoreapp3.1\RM-SDK-windwos-x86-csharp.dll
+D:\0.working\C#\RM-SDK-windwos-x86-csharp\RM-SDK-windwos-x86-csharp\obj\Debug\netcoreapp3.1\RM-SDK-windwos-x86-csharp.pdb
+D:\0.working\C#\RM-SDK-windwos-x86-csharp\RM-SDK-windwos-x86-csharp\obj\Debug\netcoreapp3.1\RM-SDK-windwos-x86-csharp.genruntimeconfig.cache
+D:\0.working\C#\RM-SDK-windwos-x86-csharp\RM-SDK-windwos-x86-csharp\obj\Debug\netcoreapp3.1\RM-SDK-windwos-x86-csharp.csproj.AssemblyReference.cache

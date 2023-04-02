@@ -1,0 +1,8 @@
+prefix=/home/ros/haoyu/try/install
+
+Name: hahahha
+Description: Description of hahahha
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

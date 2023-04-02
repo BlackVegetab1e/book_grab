@@ -1,0 +1,8 @@
+prefix=/home/ros/haoyu/try/devel
+
+Name: moveit_startup
+Description: Description of moveit_startup
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

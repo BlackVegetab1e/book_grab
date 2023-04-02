@@ -1,0 +1,1 @@
+/home/ros/haoyu/ws_rmrobot/devel/.private/rm_msgs/share/common-lisp/ros/rm_msgs/msg/_package_Tool_Digital_Output.lisp

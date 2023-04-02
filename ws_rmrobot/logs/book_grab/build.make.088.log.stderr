@@ -1,0 +1,7 @@
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/book_work_topic_service.cpp:[m[K In function ‘[01m[Kgeometry_msgs::Pose get_now_pose()[m[K’:
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/book_work_topic_service.cpp:251:1:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K}[m[K’ token
+ [01;31m[K}[m[K
+ [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/book_work_topic_service.dir/src/book_work_topic_service.cpp.o] Error 1
+make[1]: *** [CMakeFiles/book_work_topic_service.dir/all] Error 2
+make: *** [all] Error 2

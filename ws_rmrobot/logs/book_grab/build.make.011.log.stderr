@@ -1,0 +1,16 @@
+CMakeFiles/force_receive.dir/src/force_receive.cpp.o：在函数‘write_callback(boost::shared_ptr<std_msgs::String_<std::allocator<void> > const> const&)’中：
+force_receive.cpp:(.text+0x1c1)：对‘serial::Serial::write(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)’未定义的引用
+CMakeFiles/force_receive.dir/src/force_receive.cpp.o：在函数‘main’中：
+force_receive.cpp:(.text+0x396)：对‘serial::Serial::setPort(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)’未定义的引用
+force_receive.cpp:(.text+0x3c5)：对‘serial::Serial::setBaudrate(unsigned int)’未定义的引用
+force_receive.cpp:(.text+0x3ef)：对‘serial::Serial::setTimeout(serial::Timeout&)’未定义的引用
+force_receive.cpp:(.text+0x3fb)：对‘serial::Serial::open()’未定义的引用
+force_receive.cpp:(.text+0x407)：对‘serial::Serial::isOpen() const’未定义的引用
+force_receive.cpp:(.text+0x576)：对‘serial::Serial::available()’未定义的引用
+CMakeFiles/force_receive.dir/src/force_receive.cpp.o：在函数‘__static_initialization_and_destruction_0(int, int)’中：
+force_receive.cpp:(.text+0x93a)：对‘serial::Serial::Serial(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, unsigned int, serial::Timeout, serial::bytesize_t, serial::parity_t, serial::stopbits_t, serial::flowcontrol_t)’未定义的引用
+force_receive.cpp:(.text+0x96b)：对‘serial::Serial::~Serial()’未定义的引用
+collect2: error: ld returned 1 exit status
+make[2]: *** [/home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/book_grab/force_receive] Error 1
+make[1]: *** [CMakeFiles/force_receive.dir/all] Error 2
+make: *** [all] Error 2

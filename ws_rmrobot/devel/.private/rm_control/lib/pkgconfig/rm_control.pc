@@ -1,0 +1,8 @@
+prefix=/home/ros/haoyu/ws_rmrobot/devel/.private/rm_control
+
+Name: rm_control
+Description: Description of rm_control
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: actionlib_msgs

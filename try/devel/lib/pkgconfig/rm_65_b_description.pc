@@ -1,0 +1,8 @@
+prefix=/home/ros/haoyu/try/devel
+
+Name: rm_65_b_description
+Description: Description of rm_65_b_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

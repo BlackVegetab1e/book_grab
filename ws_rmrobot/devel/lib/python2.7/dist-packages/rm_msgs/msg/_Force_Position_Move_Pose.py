@@ -1,0 +1,1 @@
+/home/ros/haoyu/ws_rmrobot/devel/.private/rm_msgs/lib/python2.7/dist-packages/rm_msgs/msg/_Force_Position_Move_Pose.py

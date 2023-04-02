@@ -1,0 +1,8 @@
+prefix=/home/ros/haoyu/ws_rmrobot/devel/.private/rm_65_description
+
+Name: rm_65_description
+Description: Description of rm_65_description
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,14 @@
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/book_work_topic_service.cpp:[m[K In function ‘[01m[Kvoid init_work_frame(const ConstPtr&)[m[K’:
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/book_work_topic_service.cpp:60:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kinit[m[K’
+         [01;31m[Kinit[m[K.position.y = -0.8
+         [01;31m[K^~~~[m[K
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/book_work_topic_service.cpp:64:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaypoints[m[K’ was not declared in this scope
+         [01;31m[Kwaypoints[m[K.push_back(book_frame_Pose_to_dummy_Pose(init));
+         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/book_work_topic_service.cpp:64:9:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kasprintf[m[K’
+         [01;36m[Kwaypoints[m[K.push_back(book_frame_Pose_to_dummy_Pose(init));
+         [01;36m[K^~~~~~~~~[m[K
+         [32m[Kasprintf[m[K
+make[2]: *** [CMakeFiles/book_work_topic_service.dir/src/book_work_topic_service.cpp.o] Error 1
+make[1]: *** [CMakeFiles/book_work_topic_service.dir/all] Error 2
+make: *** [all] Error 2

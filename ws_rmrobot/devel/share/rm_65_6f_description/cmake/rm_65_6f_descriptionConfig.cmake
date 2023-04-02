@@ -1,0 +1,1 @@
+/home/ros/haoyu/ws_rmrobot/devel/.private/rm_65_6f_description/share/rm_65_6f_description/cmake/rm_65_6f_descriptionConfig.cmake

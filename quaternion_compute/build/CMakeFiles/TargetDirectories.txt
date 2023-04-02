@@ -1,0 +1,3 @@
+/home/ros/haoyu/quaternion_compute/build/CMakeFiles/rebuild_cache.dir
+/home/ros/haoyu/quaternion_compute/build/CMakeFiles/quaternion_test.dir
+/home/ros/haoyu/quaternion_compute/build/CMakeFiles/edit_cache.dir

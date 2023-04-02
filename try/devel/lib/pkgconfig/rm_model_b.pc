@@ -1,0 +1,8 @@
+prefix=/home/ros/haoyu/try/devel
+
+Name: rm_model_b
+Description: Description of rm_model_b
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

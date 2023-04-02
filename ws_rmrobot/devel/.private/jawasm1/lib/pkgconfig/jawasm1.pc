@@ -1,0 +1,8 @@
+prefix=/home/ros/haoyu/ws_rmrobot/devel/.private/jawasm1
+
+Name: jawasm1
+Description: Description of jawasm1
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

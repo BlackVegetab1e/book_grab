@@ -1,0 +1,2 @@
+ggg:hahahha:haoyu_arm_config:moveit_startup:rm_65_b_description
+-DCATKIN_DEVEL_PREFIX=/home/ros/haoyu/try/devel -DCMAKE_INSTALL_PREFIX=/home/ros/haoyu/try/install -G Unix Makefiles

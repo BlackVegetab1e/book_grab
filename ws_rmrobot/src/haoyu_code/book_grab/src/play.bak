@@ -1,0 +1,163 @@
+#include <ros/ros.h>
+
+#include <rm_msgs/MoveL.h>
+#include <rm_msgs/MoveJ_P.h>
+#include <rm_msgs/Plan_State.h>
+#include <geometry_msgs/PoseStamped.h>
+#include <geometry_msgs/Pose.h>
+#include "geometry_msgs/TransformStamped.h"
+#include "tf2_geometry_msgs/tf2_geometry_msgs.h"
+#include "tf2_ros/transform_listener.h"
+#include "tf2_ros/buffer.h"
+
+#include "tf2_ros/transform_broadcaster.h"
+#include<quaternion_haoyu.h>
+
+
+#include <moveit/move_group_interface/move_group_interface.h>
+#include <moveit/planning_scene_interface/planning_scene_interface.h>
+#include <moveit_msgs/DisplayRobotState.h>
+#include <moveit_msgs/DisplayTrajectory.h>
+#include <moveit_msgs/AttachedCollisionObject.h>
+#include <moveit_msgs/CollisionObject.h>
+#include <moveit_visual_tools/moveit_visual_tools.h>
+
+#define PI 3.1415926
+
+
+int main(int argc, char** argv)
+{
+
+    setlocale(LC_ALL,"");
+    ros::init(argc, argv, "play");
+    ros::NodeHandle nh;
+    ros::AsyncSpinner spin(1);
+    spin.start();
+
+
+    tf2_ros::Buffer buffer;
+    buffer.setUsingDedicatedThread(true);
+    tf2_ros::TransformListener listener(buffer);
+    ros::Publisher pub = nh.advertise<geometry_msgs::PoseStamped>("test",10);
+    geometry_msgs::PoseStamped points[20];
+
+    while(ros::ok() && buffer.canTransform("Link6","base_link", ros::Time::now(), ros::Duration(0.1)));   
+    std::cout<<"开始转换"<<std::endl;
+
+    for(int i = 0 ; i < 20 ; i++)
+    {
+        double therta = 2*PI*i/20.0;
+        points[i].header.frame_id = "Link6";
+        points[i].pose.position.x = 0.051*cos(therta);
+        points[i].pose.position.y = 0.051*sin(therta);
+        points[i].pose.orientation.x = 0;
+        points[i].pose.orientation.y = -0.923879;
+        points[i].pose.orientation.z = 0;
+        points[i].pose.orientation.w = 0.38268;
+
+        Quaternion q(0, sin(-PI*1/10), 0, cos(-PI*1/10));
+        Quaternion p(0,0,sin(therta/2),cos(therta/2));
+        
+        Quaternion q1 = p*q;
+        points[i].pose.orientation.x = q1._x;
+        points[i].pose.orientation.y = q1._y;
+        points[i].pose.orientation.z = q1._z;
+        points[i].pose.orientation.w = q1._w;
+
+        try
+        {
+ 
+            geometry_msgs::PoseStamped  temp = buffer.transform(points[i], "base_link", ros::Duration(1));
+            points[i] = temp;
+
+        }
+        catch(const std::exception& e)
+        {
+            // std::cerr << e.what() << '\n';
+            ROS_INFO("程序异常:%s",e.what());
+        }
+
+    }
+
+
+    
+    moveit::planning_interface::PlanningSceneInterface planning_scene_interface;
+    static const std::string PLANNING_GROUP = "arm";
+    moveit::planning_interface::MoveGroupInterface move_group(PLANNING_GROUP);
+
+    move_group.setGoalPositionTolerance(0.05);
+    move_group.setGoalOrientationTolerance(0.05);
+
+
+    for(int i = 0 ; i< 20 ; i++)
+    {
+
+        pub.publish(points[i]);
+
+        geometry_msgs::Pose target_pose1;
+        target_pose1.orientation.x = points[i].pose.orientation.x;
+        target_pose1.orientation.y = points[i].pose.orientation.y;
+        target_pose1.orientation.z = points[i].pose.orientation.z;
+        target_pose1.orientation.w = points[i].pose.orientation.w;
+
+        target_pose1.position.x = points[i].pose.position.x;
+        target_pose1.position.y = points[i].pose.position.y;
+        target_pose1.position.z = points[i].pose.position.z;
+
+        std::cout<<"x "<<points[i].pose.position.x<<std::endl
+        <<"y"<<points[i].pose.position.y<<std::endl
+        <<"z "<<points[i].pose.position.z<<std::endl
+        <<"x "<<points[i].pose.orientation.x<<std::endl
+        <<"y "<<points[i].pose.orientation.y<<std::endl
+        <<"z "<<points[i].pose.orientation.z<<std::endl
+        <<"w "<<points[i].pose.orientation.w<<std::endl;
+        
+        static tf2_ros::TransformBroadcaster broadcaster;
+        //  5-2.创建 广播的数据(通过 pose 设置)
+        geometry_msgs::TransformStamped tfs;
+        //  |----头设置
+        tfs.header.frame_id = "dummy";
+        tfs.header.stamp = ros::Time::now();
+
+        //  |----坐标系 ID
+        tfs.child_frame_id = "test";
+
+        //  |----坐标系相对信息设置
+        tfs.transform.translation.x = points[i].pose.position.x;
+        tfs.transform.translation.y = points[i].pose.position.y;
+        tfs.transform.translation.z = points[i].pose.position.z;
+        tfs.transform.rotation.x = points[i].pose.orientation.x;
+        tfs.transform.rotation.y = points[i].pose.orientation.y;
+        tfs.transform.rotation.z = points[i].pose.orientation.z;
+        tfs.transform.rotation.w = points[i].pose.orientation.w;
+
+
+        //  5-3.广播器发布数据
+        broadcaster.sendTransform(tfs);
+
+
+        move_group.setPoseTarget(target_pose1, "Link6");
+
+        // 进行运动规划，计算机器人移动到目标的运动轨迹，此时只是计算出轨迹，并不会控制机械臂运动
+        moveit::planning_interface::MoveGroupInterface::Plan my_plan;
+        ROS_INFO("Start_Planning");
+        moveit::planning_interface::MoveItErrorCode success = move_group.plan(my_plan);
+
+        ROS_INFO("Visualizing plan 1 (pose goal) %s",success?"target_pose1":"FAILED");
+        if(success)
+        {   
+            move_group.execute(my_plan);
+        }
+
+        ros::Duration(2).sleep();
+
+        
+    }
+
+
+    ros::waitForShutdown();
+
+    return 0;
+}
+
+

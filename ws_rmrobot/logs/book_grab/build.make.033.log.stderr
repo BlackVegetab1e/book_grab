@@ -1,0 +1,40 @@
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/force_receive.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/force_receive.cpp:69:24:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kuint8_t send_data [8][m[K’
+     uint8_t send_data[8[01;31m[K][m[K={0x01, 0x03, 0x00, 0x02, 0x00, 0x02};
+                        [01;31m[K^[m[K
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/force_receive.cpp:38:13:[m[K [01;36m[Knote: [m[K‘[01m[Kuint8_t send_data [8][m[K’ previously declared here
+     uint8_t [01;36m[Ksend_data[m[K[8]={0x01, 0x03, 0x00, 0x00, 0x00, 0x02};
+             [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/force_receive.cpp:70:14:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kuint16_t CRC_result[m[K’
+     uint16_t [01;31m[KCRC_result[m[K = factory_crc16(send_data, 6);
+              [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/force_receive.cpp:39:14:[m[K [01;36m[Knote: [m[K‘[01m[Kuint16_t CRC_result[m[K’ previously declared here
+     uint16_t [01;36m[KCRC_result[m[K = factory_crc16(send_data, 6);
+              [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/force_receive.cpp:101:24:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kuint8_t send_data [8][m[K’
+     uint8_t send_data[8[01;31m[K][m[K={0x01, 0x03, 0x00, 0x04, 0x00, 0x02};
+                        [01;31m[K^[m[K
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/force_receive.cpp:38:13:[m[K [01;36m[Knote: [m[K‘[01m[Kuint8_t send_data [8][m[K’ previously declared here
+     uint8_t [01;36m[Ksend_data[m[K[8]={0x01, 0x03, 0x00, 0x00, 0x00, 0x02};
+             [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/force_receive.cpp:102:14:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kuint16_t CRC_result[m[K’
+     uint16_t [01;31m[KCRC_result[m[K = factory_crc16(send_data, 6);
+              [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/force_receive.cpp:39:14:[m[K [01;36m[Knote: [m[K‘[01m[Kuint16_t CRC_result[m[K’ previously declared here
+     uint16_t [01;36m[KCRC_result[m[K = factory_crc16(send_data, 6);
+              [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/force_receive.cpp:142:24:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kuint8_t send_data [8][m[K’
+     uint8_t send_data[8[01;31m[K][m[K={0x01, 0x03, 0x00, 0x00, 0x00, 0x06};
+                        [01;31m[K^[m[K
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/force_receive.cpp:38:13:[m[K [01;36m[Knote: [m[K‘[01m[Kuint8_t send_data [8][m[K’ previously declared here
+     uint8_t [01;36m[Ksend_data[m[K[8]={0x01, 0x03, 0x00, 0x00, 0x00, 0x02};
+             [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/force_receive.cpp:143:14:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kuint16_t CRC_result[m[K’
+     uint16_t [01;31m[KCRC_result[m[K = factory_crc16(send_data, 6);
+              [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/force_receive.cpp:39:14:[m[K [01;36m[Knote: [m[K‘[01m[Kuint16_t CRC_result[m[K’ previously declared here
+     uint16_t [01;36m[KCRC_result[m[K = factory_crc16(send_data, 6);
+              [01;36m[K^~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/force_receive.dir/src/force_receive.cpp.o] Error 1
+make[1]: *** [CMakeFiles/force_receive.dir/all] Error 2
+make: *** [all] Error 2

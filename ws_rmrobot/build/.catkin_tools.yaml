@@ -1,0 +1,6 @@
+devel_space: /home/ros/haoyu/ws_rmrobot/devel
+install: false
+install_space: /home/ros/haoyu/ws_rmrobot/install
+profile: default
+source_space: /home/ros/haoyu/ws_rmrobot/src
+workspace: /home/ros/haoyu/ws_rmrobot

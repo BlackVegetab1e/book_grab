@@ -1,0 +1,8 @@
+<launch>
+
+	<node pkg="book_grab" name="test_grab" type="test_grab" output="screen"> 
+	</node>
+    <node pkg="book_grab" name="grabber_cam_frame_pub" type="grabber_cam_frame_pub" output="screen"> 
+	</node>
+
+</launch>

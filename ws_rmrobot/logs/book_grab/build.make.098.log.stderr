@@ -1,0 +1,29 @@
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/book_work_topic_service.cpp:[m[K In function ‘[01m[Kgeometry_msgs::Pose get_now_pose(const Pose&)[m[K’:
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/book_work_topic_service.cpp:70:68:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ktf2_ros::Buffer::lookupTransform(const char [6], const char [19])[m[K’
+     return buffer_ptr->lookupTransform("dummy","real_grabber_frame"[01;31m[K)[m[K.pose;
+                                                                    [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/tf2_ros/transform_listener.h:40:0[m[K,
+                 from [01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/book_work_topic_service.cpp:9[m[K:
+[01m[K/opt/ros/melodic/include/tf2_ros/buffer.h:76:5:[m[K [01;36m[Knote: [m[Kcandidate: virtual geometry_msgs::TransformStamped tf2_ros::Buffer::lookupTransform(const string&, const string&, const ros::Time&, ros::Duration) const
+     [01;36m[KlookupTransform[m[K(const std::string& target_frame, const std::string& source_frame,
+     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/tf2_ros/buffer.h:76:5:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 2 provided
+[01m[K/opt/ros/melodic/include/tf2_ros/buffer.h:92:5:[m[K [01;36m[Knote: [m[Kcandidate: virtual geometry_msgs::TransformStamped tf2_ros::Buffer::lookupTransform(const string&, const ros::Time&, const string&, const ros::Time&, const string&, ros::Duration) const
+     [01;36m[KlookupTransform[m[K(const std::string& target_frame, const ros::Time& target_time,
+     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/tf2_ros/buffer.h:92:5:[m[K [01;36m[Knote: [m[K  candidate expects 6 arguments, 2 provided
+In file included from [01m[K/opt/ros/melodic/include/tf2_ros/buffer_interface.h:35:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/tf2_ros/buffer.h:35[m[K,
+                 from [01m[K/opt/ros/melodic/include/tf2_ros/transform_listener.h:40[m[K,
+                 from [01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/book_work_topic_service.cpp:9[m[K:
+[01m[K/opt/ros/melodic/include/tf2/buffer_core.h:142:5:[m[K [01;36m[Knote: [m[Kcandidate: geometry_msgs::TransformStamped tf2::BufferCore::lookupTransform(const string&, const ros::Time&, const string&, const ros::Time&, const string&) const
+     [01;36m[KlookupTransform[m[K(const std::string& target_frame, const ros::Time& target_time,
+     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/tf2/buffer_core.h:142:5:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 2 provided
+[01m[K/opt/ros/melodic/include/tf2/buffer_core.h:126:5:[m[K [01;36m[Knote: [m[Kcandidate: geometry_msgs::TransformStamped tf2::BufferCore::lookupTransform(const string&, const string&, const ros::Time&) const
+     [01;36m[KlookupTransform[m[K(const std::string& target_frame, const std::string& source_frame,
+     [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/tf2/buffer_core.h:126:5:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+make[2]: *** [CMakeFiles/book_work_topic_service.dir/src/book_work_topic_service.cpp.o] Error 1
+make[1]: *** [CMakeFiles/book_work_topic_service.dir/all] Error 2
+make: *** [all] Error 2

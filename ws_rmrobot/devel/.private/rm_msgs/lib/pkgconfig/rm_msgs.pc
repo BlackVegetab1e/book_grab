@@ -1,0 +1,8 @@
+prefix=/home/ros/haoyu/ws_rmrobot/devel/.private/rm_msgs
+
+Name: rm_msgs
+Description: Description of rm_msgs
+Version: 0.0.0
+Cflags: -I/home/ros/haoyu/ws_rmrobot/devel/.private/rm_msgs/include -I/home/ros/haoyu/ws_rmrobot/src/rm_65_robot/rm_msgs/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs rospy std_msgs roscpp

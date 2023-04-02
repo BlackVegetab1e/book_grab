@@ -1,0 +1,8 @@
+prefix=/home/ros/haoyu/try/install
+
+Name: haoyu_arm_config
+Description: Description of haoyu_arm_config
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,7 @@
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/force_receive.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/force_receive.cpp:54:51:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kdata[m[K’ in ‘[01m[Kreceive_data[m[K’, which is of non-class type ‘[01m[Kuint8_t [8] {aka unsigned char [8]}[m[K’
+                 std::cout<<std::hex<<receive_data.[01;31m[Kdata[m[K[i];
+                                                   [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/force_receive.dir/src/force_receive.cpp.o] Error 1
+make[1]: *** [CMakeFiles/force_receive.dir/all] Error 2
+make: *** [all] Error 2

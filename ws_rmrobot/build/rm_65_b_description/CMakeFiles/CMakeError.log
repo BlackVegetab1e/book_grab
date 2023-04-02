@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ros/haoyu/ws_rmrobot/build/rm_65_b_description/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_381bd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_381bd.dir/build.make CMakeFiles/cmTC_381bd.dir/build
+make[1]: 进入目录“/home/ros/haoyu/ws_rmrobot/build/rm_65_b_description/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_381bd.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_381bd.dir/CheckSymbolExists.c.o   -c /home/ros/haoyu/ws_rmrobot/build/rm_65_b_description/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_381bd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_381bd.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_381bd.dir/CheckSymbolExists.c.o  -o cmTC_381bd 
+CMakeFiles/cmTC_381bd.dir/CheckSymbolExists.c.o：在函数‘main’中：
+CheckSymbolExists.c:(.text+0x1b)：对‘pthread_create’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_381bd.dir/build.make:97: recipe for target 'cmTC_381bd' failed
+make[1]: *** [cmTC_381bd] Error 1
+make[1]: 离开目录“/home/ros/haoyu/ws_rmrobot/build/rm_65_b_description/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_381bd/fast' failed
+make: *** [cmTC_381bd/fast] Error 2
+
+File /home/ros/haoyu/ws_rmrobot/build/rm_65_b_description/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ros/haoyu/ws_rmrobot/build/rm_65_b_description/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_448fe/fast"
+/usr/bin/make -f CMakeFiles/cmTC_448fe.dir/build.make CMakeFiles/cmTC_448fe.dir/build
+make[1]: 进入目录“/home/ros/haoyu/ws_rmrobot/build/rm_65_b_description/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_448fe.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_448fe.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_448fe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_448fe.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_448fe.dir/CheckFunctionExists.c.o  -o cmTC_448fe -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_448fe.dir/build.make:97: recipe for target 'cmTC_448fe' failed
+make[1]: *** [cmTC_448fe] Error 1
+make[1]: 离开目录“/home/ros/haoyu/ws_rmrobot/build/rm_65_b_description/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_448fe/fast' failed
+make: *** [cmTC_448fe/fast] Error 2
+
+

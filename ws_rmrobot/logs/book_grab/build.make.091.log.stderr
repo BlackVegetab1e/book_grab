@@ -1,0 +1,16 @@
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/book_work_topic_service.cpp:[m[K In function ‘[01m[Kgeometry_msgs::Pose get_now_pose()[m[K’:
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/book_work_topic_service.cpp:249:66:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kgeometry_msgs::Pose_<std::allocator<void> >::_orientation_type {aka geometry_msgs::Quaternion_<std::allocator<void> >}[m[K’ and ‘[01m[KQuaternion[m[K’)
+     temp.orientation = rotate_angle * Quaternion(temp.orientation[01;31m[K)[m[K;
+                                                                  [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/geometry_msgs/Transform.h:19:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/geometry_msgs/TransformStamped.h:19[m[K,
+                 from [01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/book_work_topic_service.cpp:4[m[K:
+[01m[K/opt/ros/melodic/include/geometry_msgs/Quaternion.h:22:8:[m[K [01;36m[Knote: [m[Kcandidate: constexpr geometry_msgs::Quaternion_<std::allocator<void> >& geometry_msgs::Quaternion_<std::allocator<void> >::operator=(const geometry_msgs::Quaternion_<std::allocator<void> >&)
+ struct [01;36m[KQuaternion_[m[K
+        [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/geometry_msgs/Quaternion.h:22:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KQuaternion[m[K’ to ‘[01m[Kconst geometry_msgs::Quaternion_<std::allocator<void> >&[m[K’
+[01m[K/opt/ros/melodic/include/geometry_msgs/Quaternion.h:22:8:[m[K [01;36m[Knote: [m[Kcandidate: constexpr geometry_msgs::Quaternion_<std::allocator<void> >& geometry_msgs::Quaternion_<std::allocator<void> >::operator=(geometry_msgs::Quaternion_<std::allocator<void> >&&)
+[01m[K/opt/ros/melodic/include/geometry_msgs/Quaternion.h:22:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KQuaternion[m[K’ to ‘[01m[Kgeometry_msgs::Quaternion_<std::allocator<void> >&&[m[K’
+make[2]: *** [CMakeFiles/book_work_topic_service.dir/src/book_work_topic_service.cpp.o] Error 1
+make[1]: *** [CMakeFiles/book_work_topic_service.dir/all] Error 2
+make: *** [all] Error 2

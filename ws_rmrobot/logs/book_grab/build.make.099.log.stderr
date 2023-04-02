@@ -1,0 +1,7 @@
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/book_work_topic_service.cpp:[m[K In function ‘[01m[Kgeometry_msgs::Pose get_now_pose(const Pose&)[m[K’:
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/book_work_topic_service.cpp:70:101:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs::TransformStamped {aka struct geometry_msgs::TransformStamped_<std::allocator<void> >}[m[K’ has no member named ‘[01m[Kpose[m[K’
+     return buffer_ptr->lookupTransform("dummy","real_grabber_frame",ros::Time(0), ros::Duration(1)).[01;31m[Kpose[m[K;
+                                                                                                     [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/book_work_topic_service.dir/src/book_work_topic_service.cpp.o] Error 1
+make[1]: *** [CMakeFiles/book_work_topic_service.dir/all] Error 2
+make: *** [all] Error 2

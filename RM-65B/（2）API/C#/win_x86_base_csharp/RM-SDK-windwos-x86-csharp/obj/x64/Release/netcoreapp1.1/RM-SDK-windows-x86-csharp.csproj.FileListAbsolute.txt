@@ -1,0 +1,5 @@
+E:\WorkSpace\CSp\RM-SDK-windows-x86-csharp\RM-SDK-windows-x86-csharp\RM-SDK-windwos-x86-csharp\obj\x64\Release\netcoreapp1.1\RM-SDK-windows-x86-csharp.csproj.AssemblyReference.cache
+E:\WorkSpace\CSp\RM-SDK-windows-x86-csharp\RM-SDK-windows-x86-csharp\RM-SDK-windwos-x86-csharp\obj\x64\Release\netcoreapp1.1\RM-SDK-windows-x86-csharp.GeneratedMSBuildEditorConfig.editorconfig
+E:\WorkSpace\CSp\RM-SDK-windows-x86-csharp\RM-SDK-windows-x86-csharp\RM-SDK-windwos-x86-csharp\obj\x64\Release\netcoreapp1.1\RM-SDK-windows-x86-csharp.AssemblyInfoInputs.cache
+E:\WorkSpace\CSp\RM-SDK-windows-x86-csharp\RM-SDK-windows-x86-csharp\RM-SDK-windwos-x86-csharp\obj\x64\Release\netcoreapp1.1\RM-SDK-windows-x86-csharp.AssemblyInfo.cs
+E:\WorkSpace\CSp\RM-SDK-windows-x86-csharp\RM-SDK-windows-x86-csharp\RM-SDK-windwos-x86-csharp\obj\x64\Release\netcoreapp1.1\RM-SDK-windows-x86-csharp.csproj.CoreCompileInputs.cache

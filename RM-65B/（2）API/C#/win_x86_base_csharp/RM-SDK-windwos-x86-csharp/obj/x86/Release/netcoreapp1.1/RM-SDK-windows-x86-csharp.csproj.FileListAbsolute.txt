@@ -1,0 +1,6 @@
+E:\WorkSpace\CSp\RM-SDK-windows-x86-csharp\RM-SDK-windows-x86-csharp\RM-SDK-windwos-x86-csharp\bin\x86\Release\netcoreapp1.1\RM-SDK-windows-x86-csharp.deps.json
+E:\WorkSpace\CSp\RM-SDK-windows-x86-csharp\RM-SDK-windows-x86-csharp\RM-SDK-windwos-x86-csharp\bin\x86\Release\netcoreapp1.1\RM-SDK-windows-x86-csharp.runtimeconfig.json
+E:\WorkSpace\CSp\RM-SDK-windows-x86-csharp\RM-SDK-windows-x86-csharp\RM-SDK-windwos-x86-csharp\bin\x86\Release\netcoreapp1.1\RM-SDK-windows-x86-csharp.runtimeconfig.dev.json
+E:\WorkSpace\CSp\RM-SDK-windows-x86-csharp\RM-SDK-windows-x86-csharp\RM-SDK-windwos-x86-csharp\obj\x86\Release\netcoreapp1.1\RM-SDK-windows-x86-csharp.csprojResolveAssemblyReference.cache
+E:\WorkSpace\CSp\RM-SDK-windows-x86-csharp\RM-SDK-windows-x86-csharp\RM-SDK-windwos-x86-csharp\obj\x86\Release\netcoreapp1.1\RM-SDK-windows-x86-csharp.csproj.CoreCompileInputs.cache
+E:\WorkSpace\CSp\RM-SDK-windows-x86-csharp\RM-SDK-windows-x86-csharp\RM-SDK-windwos-x86-csharp\obj\x86\Release\netcoreapp1.1\RM-SDK-windows-x86-csharp.AssemblyInfo.cs

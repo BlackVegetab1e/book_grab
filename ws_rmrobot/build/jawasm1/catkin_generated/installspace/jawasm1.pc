@@ -1,0 +1,8 @@
+prefix=/home/ros/haoyu/ws_rmrobot/install
+
+Name: jawasm1
+Description: Description of jawasm1
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

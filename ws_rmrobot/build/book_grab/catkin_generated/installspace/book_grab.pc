@@ -1,0 +1,8 @@
+prefix=/home/ros/haoyu/ws_rmrobot/install
+
+Name: book_grab
+Description: Description of book_grab
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

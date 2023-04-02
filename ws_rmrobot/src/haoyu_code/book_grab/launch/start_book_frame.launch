@@ -1,0 +1,8 @@
+<launch>
+
+	<node pkg="book_grab" name="haoyu_frame_pub" type="haoyu_frame_pub" output="screen"> 
+	</node>
+    <node pkg="book_grab" name="book_work_topic_service" type="book_work_topic_service" output="screen"> 
+	</node>
+
+</launch>

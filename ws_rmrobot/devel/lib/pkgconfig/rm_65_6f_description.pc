@@ -1,0 +1,1 @@
+/home/ros/haoyu/ws_rmrobot/devel/.private/rm_65_6f_description/lib/pkgconfig/rm_65_6f_description.pc

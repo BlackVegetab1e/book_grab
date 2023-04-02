@@ -1,0 +1,1 @@
+/home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/pkgconfig/book_grab.pc
