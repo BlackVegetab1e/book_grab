@@ -17,6 +17,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/include"
   "/home/ros/haoyu/ws_rmrobot/devel/.private/rm_msgs/include"
   "/home/ros/haoyu/ws_rmrobot/src/rm_65_robot/rm_msgs/include"
   "/opt/ros/melodic/include"

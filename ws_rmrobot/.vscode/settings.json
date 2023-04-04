@@ -2,7 +2,8 @@
     "python.autoComplete.extraPaths": [
         "/home/ros/haoyu/ws_rmrobot/devel/lib/python2.7/dist-packages",
         "/home/ros/catkin_ws/devel/lib/python2.7/dist-packages",
-        "/opt/ros/melodic/lib/python2.7/dist-packages"
+        "/opt/ros/melodic/lib/python2.7/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
     ],
     "files.associations": {
         "cctype": "cpp",
@@ -75,5 +76,8 @@
         "/home/ros/haoyu/ws_rmrobot/devel/lib/python2.7/dist-packages",
         "/home/ros/catkin_ws/devel/lib/python2.7/dist-packages",
         "/opt/ros/melodic/lib/python2.7/dist-packages"
-    ]
+    ],
+    "cmake.sourceDirectory": "${workspaceFolder}/build/catkin_tools_prebuild",
+
 }
+

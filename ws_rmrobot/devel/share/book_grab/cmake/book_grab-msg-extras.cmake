@@ -1,0 +1,1 @@
+/home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/share/book_grab/cmake/book_grab-msg-extras.cmake

@@ -1,0 +1,10 @@
+[ 10%] Built target api_moveJ_demo
+[ 25%] Built target api_teach_demo
+[ 30%] Built target api_moveJ_P_demo
+[ 40%] Built target planning_scene_ros_api_demo
+[ 60%] Built target api_ChangeWorkFrame_demo
+[ 60%] Built target api_moveL_demo
+[ 70%] Built target api_ChangeToolName_demo
+[ 80%] Built target api_Get_Arm_State_demo
+[ 90%] Built target test_api_movel
+[100%] Built target pick_place_demo

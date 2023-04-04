@@ -29,6 +29,7 @@ int main(int argc, char *argv[])
     ts.transform.translation.z = 0.135;
     //----设置四元数:将 欧拉角数据转换成四元数
     tf2::Quaternion qtn;
+    
     qtn.setRPY(0,0,0);
     ts.transform.rotation.x = qtn.getX();
     ts.transform.rotation.y = qtn.getY();

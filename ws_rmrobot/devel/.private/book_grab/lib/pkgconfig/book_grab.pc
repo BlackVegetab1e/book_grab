@@ -3,6 +3,6 @@ prefix=/home/ros/haoyu/ws_rmrobot/devel/.private/book_grab
 Name: book_grab
 Description: Description of book_grab
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/include
 Libs: -L${prefix}/lib 
 Requires: 

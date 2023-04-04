@@ -93,17 +93,17 @@ void book_move(const geometry_msgs::Pose::ConstPtr& msg_p)
 {      
 
     geometry_msgs::Pose end_points = dummy_Pose_to_book_frame_Pose(arm_prt->getCurrentPose("Link6").pose);
-    if(msg_p->position.x>0.15 || msg_p->position.x<0)
+    if(msg_p->position.x>0.20 || msg_p->position.x<0)
     {
         ROS_ERROR("x_direction arm_out_of_flexbile_range____haoyu define");
         return;
     }
-    if(msg_p->position.y>0 || msg_p->position.y<-0.17)
+    if(msg_p->position.y>0 || msg_p->position.y<-0.20)
     {
         ROS_ERROR("y_direction arm_out_of_flexbile_range____haoyu define");
         return;
     }
-    if(msg_p->position.z>0.19 || msg_p->position.z<0)
+    if(msg_p->position.z>0.20 || msg_p->position.z<0)
     {
         ROS_ERROR("z_direction arm_out_of_flexbile_range____haoyu define");
         return;
@@ -143,19 +143,19 @@ void move_based_on_now(const geometry_msgs::Pose &step)
     target_pose.position.y = start_pose.position.y + step.position.y;
     target_pose.position.z = start_pose.position.z + step.position.z;
 
-    if(target_pose.position.x>0.15 || target_pose.position.x<0)
+    if(target_pose.position.x>0.20 || target_pose.position.x<-5)
     {
-        ROS_ERROR("x_direction arm_out_of_flexbile_range____haoyu define");
+        ROS_ERROR("x_direction arm_out_of_flexbile_range____haoyu define%f", target_pose.position.x);
         return;
     }
-    if(target_pose.position.y>0 || target_pose.position.y<-0.17)
+    if(target_pose.position.y>0 || target_pose.position.y<-0.20)
     {
-        ROS_ERROR("y_direction arm_out_of_flexbile_range____haoyu define");
+        ROS_ERROR("y_direction arm_out_of_flexbile_range____haoyu define%f", target_pose.position.y);
         return;
     }
-    if(target_pose.position.z>0.19 || target_pose.position.z<0)
+    if(target_pose.position.z>0.20 || target_pose.position.z<0)
     {
-        ROS_ERROR("z_directionarm_out_of_flexbile_range____haoyu define");
+        ROS_ERROR("z_directionarm_out_of_flexbile_range____haoyu define%f", target_pose.position.z);
         return;
     }
 

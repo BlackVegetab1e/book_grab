@@ -1,0 +1,59 @@
+[35m[1mScanning dependencies of target _book_grab_generate_messages_check_deps_hh_eye[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target quaternion_haoyu[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target force_receive[0m
+[35m[1mScanning dependencies of target test_grab[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[  0%] Built target std_msgs_generate_messages_lisp
+[  4%] [32mBuilding CXX object CMakeFiles/test_grab.dir/src/test_grab.cpp.o[0m
+[  9%] [32mBuilding CXX object CMakeFiles/quaternion_haoyu.dir/src/quaternion_haoyu.cpp.o[0m
+[  9%] Built target std_msgs_generate_messages_eus
+[  9%] Built target std_msgs_generate_messages_py
+[ 14%] [32mBuilding CXX object CMakeFiles/force_receive.dir/src/force_receive.cpp.o[0m
+[ 14%] Built target std_msgs_generate_messages_nodejs
+[ 14%] Built target _book_grab_generate_messages_check_deps_hh_eye
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target haoyu_frame_pub[0m
+[35m[1mScanning dependencies of target grab_motion[0m
+[35m[1mScanning dependencies of target book_grab_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target book_grab_generate_messages_lisp[0m
+[ 14%] Built target std_msgs_generate_messages_cpp
+[ 19%] [32mBuilding CXX object CMakeFiles/haoyu_frame_pub.dir/src/haoyu_frame_pub.cpp.o[0m
+[ 23%] [34m[1mGenerating Javascript code from book_grab/hh_eye.srv[0m
+[ 28%] [34m[1mGenerating Lisp code from book_grab/hh_eye.srv[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/grab_motion.dir/src/grab_motion.cpp.o[0m
+[35m[1mScanning dependencies of target book_grab_generate_messages_py[0m
+[ 38%] [34m[1mGenerating Python code from SRV book_grab/hh_eye[0m
+[ 38%] Built target book_grab_generate_messages_nodejs
+[ 38%] Built target book_grab_generate_messages_lisp
+[35m[1mScanning dependencies of target book_grab_generate_messages_eus[0m
+[35m[1mScanning dependencies of target book_grab_generate_messages_cpp[0m
+[ 42%] [34m[1mGenerating EusLisp code from book_grab/hh_eye.srv[0m
+[ 47%] [34m[1mGenerating C++ code from book_grab/hh_eye.srv[0m
+[ 52%] [34m[1mGenerating EusLisp manifest code for book_grab[0m
+[ 57%] [34m[1mGenerating Python srv __init__.py for book_grab[0m
+[ 57%] Built target book_grab_generate_messages_cpp
+[ 57%] Built target book_grab_generate_messages_py
+[ 61%] [32m[1mLinking CXX shared library /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/libquaternion_haoyu.so[0m
+[ 61%] Built target quaternion_haoyu
+[35m[1mScanning dependencies of target play[0m
+[35m[1mScanning dependencies of target book_work_topic_service[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/book_work_topic_service.dir/src/book_work_topic_service.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/play.dir/src/play.cpp.o[0m
+[ 76%] [32m[1mLinking CXX executable /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/book_grab/haoyu_frame_pub[0m
+[ 76%] Built target book_grab_generate_messages_eus
+[35m[1mScanning dependencies of target book_grab_generate_messages[0m
+[ 76%] Built target book_grab_generate_messages
+[ 80%] [32m[1mLinking CXX executable /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/book_grab/grab_motion[0m
+[ 85%] [32m[1mLinking CXX executable /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/book_grab/force_receive[0m
+[ 85%] Built target haoyu_frame_pub
+[ 85%] Built target grab_motion
+[ 85%] Built target force_receive
+[ 90%] [32m[1mLinking CXX executable /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/book_grab/test_grab[0m
+[ 90%] Built target test_grab
+[ 95%] [32m[1mLinking CXX executable /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/book_grab/play[0m
+[ 95%] Built target play
+[100%] [32m[1mLinking CXX executable /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/book_grab/book_work_topic_service[0m
+[100%] Built target book_work_topic_service
