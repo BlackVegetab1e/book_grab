@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/ros/haoyu/ws_rmrobot/build/book_grab
 CMakeFiles/book_work_topic_service.dir/all: CMakeFiles/quaternion_haoyu.dir/all
 	$(MAKE) -f CMakeFiles/book_work_topic_service.dir/build.make CMakeFiles/book_work_topic_service.dir/depend
 	$(MAKE) -f CMakeFiles/book_work_topic_service.dir/build.make CMakeFiles/book_work_topic_service.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=8,9 "Built target book_work_topic_service"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=13,14 "Built target book_work_topic_service"
 .PHONY : CMakeFiles/book_work_topic_service.dir/all
 
 # Include target in all.
@@ -103,7 +103,7 @@ clean: CMakeFiles/book_work_topic_service.dir/clean
 CMakeFiles/play.dir/all: CMakeFiles/quaternion_haoyu.dir/all
 	$(MAKE) -f CMakeFiles/play.dir/build.make CMakeFiles/play.dir/depend
 	$(MAKE) -f CMakeFiles/play.dir/build.make CMakeFiles/play.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=27,28 "Built target play"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=32,33 "Built target play"
 .PHONY : CMakeFiles/play.dir/all
 
 # Include target in all.
@@ -140,7 +140,7 @@ clean: CMakeFiles/play.dir/clean
 CMakeFiles/test_grab.dir/all:
 	$(MAKE) -f CMakeFiles/test_grab.dir/build.make CMakeFiles/test_grab.dir/depend
 	$(MAKE) -f CMakeFiles/test_grab.dir/build.make CMakeFiles/test_grab.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=31,32 "Built target test_grab"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=36,37 "Built target test_grab"
 .PHONY : CMakeFiles/test_grab.dir/all
 
 # Include target in all.
@@ -177,7 +177,7 @@ clean: CMakeFiles/test_grab.dir/clean
 CMakeFiles/quaternion_haoyu.dir/all:
 	$(MAKE) -f CMakeFiles/quaternion_haoyu.dir/build.make CMakeFiles/quaternion_haoyu.dir/depend
 	$(MAKE) -f CMakeFiles/quaternion_haoyu.dir/build.make CMakeFiles/quaternion_haoyu.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=29,30 "Built target quaternion_haoyu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=34,35 "Built target quaternion_haoyu"
 .PHONY : CMakeFiles/quaternion_haoyu.dir/all
 
 # Include target in all.
@@ -219,7 +219,7 @@ CMakeFiles/book_grab_genpy.dir/all: CMakeFiles/book_grab_generate_messages_py.di
 
 # Build rule for subdir invocation for target.
 CMakeFiles/book_grab_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/book_grab_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 0
 .PHONY : CMakeFiles/book_grab_genpy.dir/rule
@@ -244,15 +244,16 @@ clean: CMakeFiles/book_grab_genpy.dir/clean
 
 # All Build rule for target.
 CMakeFiles/book_grab_generate_messages_py.dir/all: CMakeFiles/_book_grab_generate_messages_check_deps_hh_eye.dir/all
+CMakeFiles/book_grab_generate_messages_py.dir/all: CMakeFiles/_book_grab_generate_messages_check_deps_try_getin.dir/all
 CMakeFiles/book_grab_generate_messages_py.dir/all: CMakeFiles/std_msgs_generate_messages_py.dir/all
 	$(MAKE) -f CMakeFiles/book_grab_generate_messages_py.dir/build.make CMakeFiles/book_grab_generate_messages_py.dir/depend
 	$(MAKE) -f CMakeFiles/book_grab_generate_messages_py.dir/build.make CMakeFiles/book_grab_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=6,7 "Built target book_grab_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=10,11,12 "Built target book_grab_generate_messages_py"
 .PHONY : CMakeFiles/book_grab_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/book_grab_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/book_grab_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 0
 .PHONY : CMakeFiles/book_grab_generate_messages_py.dir/rule
@@ -284,7 +285,7 @@ CMakeFiles/book_grab_genlisp.dir/all: CMakeFiles/book_grab_generate_messages_lis
 
 # Build rule for subdir invocation for target.
 CMakeFiles/book_grab_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/book_grab_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 0
 .PHONY : CMakeFiles/book_grab_genlisp.dir/rule
@@ -311,7 +312,7 @@ clean: CMakeFiles/book_grab_genlisp.dir/clean
 CMakeFiles/force_receive.dir/all:
 	$(MAKE) -f CMakeFiles/force_receive.dir/build.make CMakeFiles/force_receive.dir/depend
 	$(MAKE) -f CMakeFiles/force_receive.dir/build.make CMakeFiles/force_receive.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=10,11 "Built target force_receive"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=15,16 "Built target force_receive"
 .PHONY : CMakeFiles/force_receive.dir/all
 
 # Include target in all.
@@ -353,7 +354,7 @@ CMakeFiles/book_grab_geneus.dir/all: CMakeFiles/book_grab_generate_messages_eus.
 
 # Build rule for subdir invocation for target.
 CMakeFiles/book_grab_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/book_grab_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 0
 .PHONY : CMakeFiles/book_grab_geneus.dir/rule
@@ -378,15 +379,16 @@ clean: CMakeFiles/book_grab_geneus.dir/clean
 
 # All Build rule for target.
 CMakeFiles/book_grab_generate_messages_eus.dir/all: CMakeFiles/_book_grab_generate_messages_check_deps_hh_eye.dir/all
+CMakeFiles/book_grab_generate_messages_eus.dir/all: CMakeFiles/_book_grab_generate_messages_check_deps_try_getin.dir/all
 CMakeFiles/book_grab_generate_messages_eus.dir/all: CMakeFiles/std_msgs_generate_messages_eus.dir/all
 	$(MAKE) -f CMakeFiles/book_grab_generate_messages_eus.dir/build.make CMakeFiles/book_grab_generate_messages_eus.dir/depend
 	$(MAKE) -f CMakeFiles/book_grab_generate_messages_eus.dir/build.make CMakeFiles/book_grab_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=2,3 "Built target book_grab_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=3,4,5 "Built target book_grab_generate_messages_eus"
 .PHONY : CMakeFiles/book_grab_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/book_grab_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/book_grab_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 0
 .PHONY : CMakeFiles/book_grab_generate_messages_eus.dir/rule
@@ -418,7 +420,7 @@ CMakeFiles/book_grab_gencpp.dir/all: CMakeFiles/book_grab_generate_messages_cpp.
 
 # Build rule for subdir invocation for target.
 CMakeFiles/book_grab_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/book_grab_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 0
 .PHONY : CMakeFiles/book_grab_gencpp.dir/rule
@@ -442,11 +444,11 @@ clean: CMakeFiles/book_grab_gencpp.dir/clean
 # Target rules for target CMakeFiles/book_grab_generate_messages.dir
 
 # All Build rule for target.
-CMakeFiles/book_grab_generate_messages.dir/all: CMakeFiles/book_grab_generate_messages_nodejs.dir/all
 CMakeFiles/book_grab_generate_messages.dir/all: CMakeFiles/book_grab_generate_messages_py.dir/all
 CMakeFiles/book_grab_generate_messages.dir/all: CMakeFiles/book_grab_generate_messages_eus.dir/all
 CMakeFiles/book_grab_generate_messages.dir/all: CMakeFiles/book_grab_generate_messages_cpp.dir/all
 CMakeFiles/book_grab_generate_messages.dir/all: CMakeFiles/book_grab_generate_messages_lisp.dir/all
+CMakeFiles/book_grab_generate_messages.dir/all: CMakeFiles/book_grab_generate_messages_nodejs.dir/all
 	$(MAKE) -f CMakeFiles/book_grab_generate_messages.dir/build.make CMakeFiles/book_grab_generate_messages.dir/depend
 	$(MAKE) -f CMakeFiles/book_grab_generate_messages.dir/build.make CMakeFiles/book_grab_generate_messages.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num= "Built target book_grab_generate_messages"
@@ -459,7 +461,7 @@ all: CMakeFiles/book_grab_generate_messages.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/book_grab_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/book_grab_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 0
 .PHONY : CMakeFiles/book_grab_generate_messages.dir/rule
@@ -613,14 +615,15 @@ clean: CMakeFiles/std_srvs_generate_messages_lisp.dir/clean
 # All Build rule for target.
 CMakeFiles/book_grab_generate_messages_cpp.dir/all: CMakeFiles/_book_grab_generate_messages_check_deps_hh_eye.dir/all
 CMakeFiles/book_grab_generate_messages_cpp.dir/all: CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+CMakeFiles/book_grab_generate_messages_cpp.dir/all: CMakeFiles/_book_grab_generate_messages_check_deps_try_getin.dir/all
 	$(MAKE) -f CMakeFiles/book_grab_generate_messages_cpp.dir/build.make CMakeFiles/book_grab_generate_messages_cpp.dir/depend
 	$(MAKE) -f CMakeFiles/book_grab_generate_messages_cpp.dir/build.make CMakeFiles/book_grab_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=1 "Built target book_grab_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=1,2 "Built target book_grab_generate_messages_cpp"
 .PHONY : CMakeFiles/book_grab_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/book_grab_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/book_grab_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 0
 .PHONY : CMakeFiles/book_grab_generate_messages_cpp.dir/rule
@@ -1569,6 +1572,75 @@ clean: CMakeFiles/octomap_msgs_generate_messages_eus.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/try_getin_by_force.dir
+
+# All Build rule for target.
+CMakeFiles/try_getin_by_force.dir/all:
+	$(MAKE) -f CMakeFiles/try_getin_by_force.dir/build.make CMakeFiles/try_getin_by_force.dir/depend
+	$(MAKE) -f CMakeFiles/try_getin_by_force.dir/build.make CMakeFiles/try_getin_by_force.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=38,39 "Built target try_getin_by_force"
+.PHONY : CMakeFiles/try_getin_by_force.dir/all
+
+# Include target in all.
+all: CMakeFiles/try_getin_by_force.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/try_getin_by_force.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/try_getin_by_force.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 0
+.PHONY : CMakeFiles/try_getin_by_force.dir/rule
+
+# Convenience name for target.
+try_getin_by_force: CMakeFiles/try_getin_by_force.dir/rule
+
+.PHONY : try_getin_by_force
+
+# clean rule for target.
+CMakeFiles/try_getin_by_force.dir/clean:
+	$(MAKE) -f CMakeFiles/try_getin_by_force.dir/build.make CMakeFiles/try_getin_by_force.dir/clean
+.PHONY : CMakeFiles/try_getin_by_force.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/try_getin_by_force.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/_book_grab_generate_messages_check_deps_try_getin.dir
+
+# All Build rule for target.
+CMakeFiles/_book_grab_generate_messages_check_deps_try_getin.dir/all:
+	$(MAKE) -f CMakeFiles/_book_grab_generate_messages_check_deps_try_getin.dir/build.make CMakeFiles/_book_grab_generate_messages_check_deps_try_getin.dir/depend
+	$(MAKE) -f CMakeFiles/_book_grab_generate_messages_check_deps_try_getin.dir/build.make CMakeFiles/_book_grab_generate_messages_check_deps_try_getin.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num= "Built target _book_grab_generate_messages_check_deps_try_getin"
+.PHONY : CMakeFiles/_book_grab_generate_messages_check_deps_try_getin.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/_book_grab_generate_messages_check_deps_try_getin.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/_book_grab_generate_messages_check_deps_try_getin.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 0
+.PHONY : CMakeFiles/_book_grab_generate_messages_check_deps_try_getin.dir/rule
+
+# Convenience name for target.
+_book_grab_generate_messages_check_deps_try_getin: CMakeFiles/_book_grab_generate_messages_check_deps_try_getin.dir/rule
+
+.PHONY : _book_grab_generate_messages_check_deps_try_getin
+
+# clean rule for target.
+CMakeFiles/_book_grab_generate_messages_check_deps_try_getin.dir/clean:
+	$(MAKE) -f CMakeFiles/_book_grab_generate_messages_check_deps_try_getin.dir/build.make CMakeFiles/_book_grab_generate_messages_check_deps_try_getin.dir/clean
+.PHONY : CMakeFiles/_book_grab_generate_messages_check_deps_try_getin.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/_book_grab_generate_messages_check_deps_try_getin.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/tf_generate_messages_lisp.dir
 
 # All Build rule for target.
@@ -1765,15 +1837,16 @@ clean: CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
 
 # All Build rule for target.
 CMakeFiles/book_grab_generate_messages_lisp.dir/all: CMakeFiles/_book_grab_generate_messages_check_deps_hh_eye.dir/all
+CMakeFiles/book_grab_generate_messages_lisp.dir/all: CMakeFiles/_book_grab_generate_messages_check_deps_try_getin.dir/all
 CMakeFiles/book_grab_generate_messages_lisp.dir/all: CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 	$(MAKE) -f CMakeFiles/book_grab_generate_messages_lisp.dir/build.make CMakeFiles/book_grab_generate_messages_lisp.dir/depend
 	$(MAKE) -f CMakeFiles/book_grab_generate_messages_lisp.dir/build.make CMakeFiles/book_grab_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=4 "Built target book_grab_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=6,7 "Built target book_grab_generate_messages_lisp"
 .PHONY : CMakeFiles/book_grab_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/book_grab_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/book_grab_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 0
 .PHONY : CMakeFiles/book_grab_generate_messages_lisp.dir/rule
@@ -2405,16 +2478,17 @@ clean: CMakeFiles/actionlib_generate_messages_eus.dir/clean
 # Target rules for target CMakeFiles/book_grab_generate_messages_nodejs.dir
 
 # All Build rule for target.
-CMakeFiles/book_grab_generate_messages_nodejs.dir/all: CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 CMakeFiles/book_grab_generate_messages_nodejs.dir/all: CMakeFiles/_book_grab_generate_messages_check_deps_hh_eye.dir/all
+CMakeFiles/book_grab_generate_messages_nodejs.dir/all: CMakeFiles/_book_grab_generate_messages_check_deps_try_getin.dir/all
+CMakeFiles/book_grab_generate_messages_nodejs.dir/all: CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 	$(MAKE) -f CMakeFiles/book_grab_generate_messages_nodejs.dir/build.make CMakeFiles/book_grab_generate_messages_nodejs.dir/depend
 	$(MAKE) -f CMakeFiles/book_grab_generate_messages_nodejs.dir/build.make CMakeFiles/book_grab_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=5 "Built target book_grab_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=8,9 "Built target book_grab_generate_messages_nodejs"
 .PHONY : CMakeFiles/book_grab_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/book_grab_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/book_grab_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 0
 .PHONY : CMakeFiles/book_grab_generate_messages_nodejs.dir/rule
@@ -3086,7 +3160,7 @@ CMakeFiles/book_grab_gennodejs.dir/all: CMakeFiles/book_grab_generate_messages_n
 
 # Build rule for subdir invocation for target.
 CMakeFiles/book_grab_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/book_grab_gennodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles 0
 .PHONY : CMakeFiles/book_grab_gennodejs.dir/rule
@@ -3305,7 +3379,7 @@ clean: CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/clean
 CMakeFiles/grab_motion.dir/all:
 	$(MAKE) -f CMakeFiles/grab_motion.dir/build.make CMakeFiles/grab_motion.dir/depend
 	$(MAKE) -f CMakeFiles/grab_motion.dir/build.make CMakeFiles/grab_motion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=19,20 "Built target grab_motion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=24,25 "Built target grab_motion"
 .PHONY : CMakeFiles/grab_motion.dir/all
 
 # Include target in all.
@@ -3342,7 +3416,7 @@ clean: CMakeFiles/grab_motion.dir/clean
 CMakeFiles/haoyu_frame_pub.dir/all:
 	$(MAKE) -f CMakeFiles/haoyu_frame_pub.dir/build.make CMakeFiles/haoyu_frame_pub.dir/depend
 	$(MAKE) -f CMakeFiles/haoyu_frame_pub.dir/build.make CMakeFiles/haoyu_frame_pub.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=25,26 "Built target haoyu_frame_pub"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=30,31 "Built target haoyu_frame_pub"
 .PHONY : CMakeFiles/haoyu_frame_pub.dir/all
 
 # Include target in all.
@@ -4057,7 +4131,7 @@ gtest/googlemock/preinstall: gtest/googlemock/gtest/preinstall
 gtest/googlemock/CMakeFiles/gmock_main.dir/all:
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=15,16,17,18 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=20,21,22,23 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4089,7 +4163,7 @@ clean: gtest/googlemock/CMakeFiles/gmock_main.dir/clean
 gtest/googlemock/CMakeFiles/gmock.dir/all:
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=12,13,14 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=17,18,19 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4140,7 +4214,7 @@ gtest/googlemock/gtest/preinstall:
 gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all: gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=23,24 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=28,29 "Built target gtest_main"
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4172,7 +4246,7 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
 gtest/googlemock/gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=21,22 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=26,27 "Built target gtest"
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.

@@ -8,7 +8,7 @@ import os
 
 pwd = "/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/scripts/yolov5"
 
-def the_master_piece_of_hh():
+def the_master_piece_of_hh(camera):
     # -----------------------------------双目相机的基本参数---------------------------------------------------------
     #   left_camera_matrix          左相机的内参矩阵
     #   right_camera_matrix         右相机的内参矩阵
@@ -54,8 +54,7 @@ def the_master_piece_of_hh():
     # cv2.moveWindow("depth_color", 600, 0)
     # cv2.createTrackbar("num", "depth", 0, 10, lambda x: None)
     # cv2.createTrackbar("blockSize", "depth", 5, 255, lambda x: None)
-
-    camera = cv2.VideoCapture(1)
+    
     camera.set(cv2.CAP_PROP_FRAME_WIDTH, 2560)
     camera.set(cv2.CAP_PROP_FRAME_HEIGHT, 960)
 
@@ -134,9 +133,7 @@ def the_master_piece_of_hh():
     # threeD = cv2.reprojectImageTo3D(disparity, Q, handleMissingValues=False, ddepth=cv2.CV_16S)
     threeD = cv2.reprojectImageTo3D(disparity, Q, handleMissingValues=False, ddepth=cv2.CV_32FC3)
     # 计算出的threeD，需要乘以16，才等于现实中的距离
-    print("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&")
-    print(type(threeD))
-    print("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&")
+
     threeD = threeD * 16
     # print(threeD)
     print("xyza是：", threeD[y][x][0], threeD[y][x][1], threeD[y][x][2], a)

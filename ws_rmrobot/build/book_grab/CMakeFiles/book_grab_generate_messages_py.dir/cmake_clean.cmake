@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/book_grab_generate_messages_py"
+  "/home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/python2.7/dist-packages/book_grab/srv/_try_getin.py"
   "/home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/python2.7/dist-packages/book_grab/srv/_hh_eye.py"
   "/home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/python2.7/dist-packages/book_grab/srv/__init__.py"
 )

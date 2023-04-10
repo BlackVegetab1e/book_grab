@@ -11,4 +11,5 @@ export CMAKE_PREFIX_PATH="/home/ros/haoyu/ws_rmrobot/devel/.private/book_grab:$C
 export LD_LIBRARY_PATH="/home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib:$LD_LIBRARY_PATH"
 export PKG_CONFIG_PATH="/home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/ros/haoyu/ws_rmrobot/build/book_grab'
+export PYTHONPATH="/home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/python2.7/dist-packages:$PYTHONPATH"
 export ROS_PACKAGE_PATH="/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab:$ROS_PACKAGE_PATH"

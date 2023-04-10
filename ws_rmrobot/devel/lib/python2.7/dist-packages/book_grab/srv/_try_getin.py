@@ -1,0 +1,1 @@
+/home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/python2.7/dist-packages/book_grab/srv/_try_getin.py

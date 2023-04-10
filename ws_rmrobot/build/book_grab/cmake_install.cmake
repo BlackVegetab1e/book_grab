@@ -129,7 +129,10 @@ file(INSTALL DESTINATION "/home/ros/haoyu/ws_rmrobot/install" TYPE FILE FILES "/
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/book_grab/srv" TYPE FILE FILES "/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/srv/hh_eye.srv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/book_grab/srv" TYPE FILE FILES
+    "/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/srv/hh_eye.srv"
+    "/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/srv/try_getin.srv"
+    )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

@@ -66,6 +66,7 @@ find_package(catkin REQUIRED COMPONENTS
 add_service_files(
   FILES
   hh_eye.srv
+  try_getin.srv
 )
 
 ## Generate actions in the 'action' folder
@@ -148,6 +149,7 @@ add_executable(play src/play.cpp)
 add_executable(book_work_topic_service src/book_work_topic_service.cpp)
 add_executable(grab_motion src/grab_motion.cpp)
 add_executable(force_receive src/force_receive.cpp)
+add_executable(try_getin_by_force src/try_getin_by_force.cpp)
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
@@ -170,6 +172,12 @@ target_link_libraries(force_receive
 target_link_libraries(test_grab
   ${catkin_LIBRARIES}
 )
+
+target_link_libraries(try_getin_by_force
+  ${catkin_LIBRARIES}
+)
+
+
 
 target_link_libraries(book_work_topic_service quaternion_haoyu
   ${catkin_LIBRARIES}

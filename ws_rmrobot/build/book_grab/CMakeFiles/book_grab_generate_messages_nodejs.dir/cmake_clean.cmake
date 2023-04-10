@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/book_grab_generate_messages_nodejs"
+  "/home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/share/gennodejs/ros/book_grab/srv/try_getin.js"
   "/home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/share/gennodejs/ros/book_grab/srv/hh_eye.js"
 )
 

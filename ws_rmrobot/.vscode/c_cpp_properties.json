@@ -25,7 +25,8 @@
                 "/usr/include/**",
                 "/opt/ros/melodic/include",
                 "${workspaceFolder}/devel/.private/rm_msgs/include",
-                "${workspaceFolder}/src/haoyu_code/book_grab/include"
+                "${workspaceFolder}/src/haoyu_code/book_grab/include",
+                "${workspaceFolder}/devel/.private/book_grab/include"
             ],
             "name": "ROS"
         }

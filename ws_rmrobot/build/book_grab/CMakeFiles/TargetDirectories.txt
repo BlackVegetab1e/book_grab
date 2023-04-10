@@ -50,6 +50,8 @@
 /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles/actionlib_generate_messages_cpp.dir
 /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles/object_recognition_msgs_generate_messages_eus.dir
 /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles/octomap_msgs_generate_messages_eus.dir
+/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles/try_getin_by_force.dir
+/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles/_book_grab_generate_messages_check_deps_try_getin.dir
 /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles/tf_generate_messages_lisp.dir
 /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles/rm_msgs_generate_messages_lisp.dir
 /home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir

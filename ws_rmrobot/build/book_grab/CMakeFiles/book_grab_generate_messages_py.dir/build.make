@@ -53,21 +53,29 @@ CMAKE_BINARY_DIR = /home/ros/haoyu/ws_rmrobot/build/book_grab
 # Include the progress variables for this target.
 include CMakeFiles/book_grab_generate_messages_py.dir/progress.make
 
+CMakeFiles/book_grab_generate_messages_py: /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/python2.7/dist-packages/book_grab/srv/_try_getin.py
 CMakeFiles/book_grab_generate_messages_py: /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/python2.7/dist-packages/book_grab/srv/_hh_eye.py
 CMakeFiles/book_grab_generate_messages_py: /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/python2.7/dist-packages/book_grab/srv/__init__.py
 
 
+/home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/python2.7/dist-packages/book_grab/srv/_try_getin.py: /opt/ros/melodic/lib/genpy/gensrv_py.py
+/home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/python2.7/dist-packages/book_grab/srv/_try_getin.py: /home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/srv/try_getin.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV book_grab/try_getin"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/srv/try_getin.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p book_grab -o /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/python2.7/dist-packages/book_grab/srv
+
 /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/python2.7/dist-packages/book_grab/srv/_hh_eye.py: /opt/ros/melodic/lib/genpy/gensrv_py.py
 /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/python2.7/dist-packages/book_grab/srv/_hh_eye.py: /home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/srv/hh_eye.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV book_grab/hh_eye"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python code from SRV book_grab/hh_eye"
 	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/srv/hh_eye.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p book_grab -o /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/python2.7/dist-packages/book_grab/srv
 
 /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/python2.7/dist-packages/book_grab/srv/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/python2.7/dist-packages/book_grab/srv/__init__.py: /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/python2.7/dist-packages/book_grab/srv/_try_getin.py
 /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/python2.7/dist-packages/book_grab/srv/__init__.py: /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/python2.7/dist-packages/book_grab/srv/_hh_eye.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python srv __init__.py for book_grab"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python srv __init__.py for book_grab"
 	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/python2.7/dist-packages/book_grab/srv --initpy
 
 book_grab_generate_messages_py: CMakeFiles/book_grab_generate_messages_py
+book_grab_generate_messages_py: /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/python2.7/dist-packages/book_grab/srv/_try_getin.py
 book_grab_generate_messages_py: /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/python2.7/dist-packages/book_grab/srv/_hh_eye.py
 book_grab_generate_messages_py: /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/lib/python2.7/dist-packages/book_grab/srv/__init__.py
 book_grab_generate_messages_py: CMakeFiles/book_grab_generate_messages_py.dir/build.make

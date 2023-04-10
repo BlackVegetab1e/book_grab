@@ -17,6 +17,7 @@ int main(int argc, char *argv[])
     geometry_msgs::TransformStamped book_work_frame;
     geometry_msgs::TransformStamped real_grabber_frame;
     geometry_msgs::TransformStamped grabber_tip;
+    geometry_msgs::TransformStamped grabber_tip_L;
 
     ts.header.seq = 100;
     ts.header.stamp = ros::Time::now();
@@ -38,6 +39,8 @@ int main(int argc, char *argv[])
     // 5.广播器发布坐标系信息
 
 
+    tf2::Quaternion qtn_cam;
+    qtn_cam.setRPY(-0.01821263,0.01596588,-0.55131754);
     L_cam_ts.header.seq = 100;
     L_cam_ts.header.stamp = ros::Time::now();
     L_cam_ts.header.frame_id = "Link6";
@@ -45,13 +48,13 @@ int main(int argc, char *argv[])
     L_cam_ts.child_frame_id = "LeftCam";
     //----设置子级相对于父级的偏移量
     L_cam_ts.transform.translation.x = 0.097;
-    L_cam_ts.transform.translation.y = -0.03;
+    L_cam_ts.transform.translation.y = -0.03+0.009;
     L_cam_ts.transform.translation.z = -0.17;
     //----设置四元数:将 欧拉角数据转换成四元数
-    L_cam_ts.transform.rotation.x = qtn.getX();
-    L_cam_ts.transform.rotation.y = qtn.getY();
-    L_cam_ts.transform.rotation.z = qtn.getZ();
-    L_cam_ts.transform.rotation.w = qtn.getW();
+    L_cam_ts.transform.rotation.x = 0;
+    L_cam_ts.transform.rotation.y = 0;
+    L_cam_ts.transform.rotation.z = 0.707;
+    L_cam_ts.transform.rotation.w = 0.707;
     // 5.广播器发布坐标系信息
 
     // R_cam_ts.header.seq = 100;
@@ -107,12 +110,30 @@ int main(int argc, char *argv[])
     // 5.广播器发布坐标系信息
 
 
+    grabber_tip_L.header.seq = 100;
+    grabber_tip_L.header.stamp = ros::Time::now();
+    grabber_tip_L.header.frame_id = "Link6";
+    //----设置子级坐标系
+    grabber_tip_L.child_frame_id = "grabber_tip_L";
+    //----设置子级相对于父级的偏移量
+    grabber_tip_L.transform.translation.x = 0;
+    grabber_tip_L.transform.translation.y = -0.03;
+    grabber_tip_L.transform.translation.z = 0.037;
+    //----设置四元数:将 欧拉角数据转换成四元数
+    grabber_tip_L.transform.rotation.x = 0;
+    grabber_tip_L.transform.rotation.y = 0;
+    grabber_tip_L.transform.rotation.z = 0;
+    grabber_tip_L.transform.rotation.w = 1;
+    // 5.广播器发布坐标系信息
+
+
 
     // broadcaster.sendTransform(ts);
     broadcaster.sendTransform(L_cam_ts);
     // broadcaster.sendTransform(R_cam_ts);
     broadcaster.sendTransform(book_work_frame);
     broadcaster.sendTransform(grabber_tip);
+    broadcaster.sendTransform(grabber_tip_L);
     // broadcaster.sendTransform(real_grabber_frame);
     ros::spin();
 

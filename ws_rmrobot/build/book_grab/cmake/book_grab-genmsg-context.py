@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = ""
-services_str = "/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/srv/hh_eye.srv"
+services_str = "/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/srv/hh_eye.srv;/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/srv/try_getin.srv"
 pkg_name = "book_grab"
 dependencies_str = "std_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

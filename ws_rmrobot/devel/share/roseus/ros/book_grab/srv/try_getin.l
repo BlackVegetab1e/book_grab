@@ -1,0 +1,1 @@
+/home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/share/roseus/ros/book_grab/srv/try_getin.l

@@ -53,20 +53,27 @@ CMAKE_BINARY_DIR = /home/ros/haoyu/ws_rmrobot/build/book_grab
 # Include the progress variables for this target.
 include CMakeFiles/book_grab_generate_messages_eus.dir/progress.make
 
+CMakeFiles/book_grab_generate_messages_eus: /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/share/roseus/ros/book_grab/srv/try_getin.l
 CMakeFiles/book_grab_generate_messages_eus: /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/share/roseus/ros/book_grab/srv/hh_eye.l
 CMakeFiles/book_grab_generate_messages_eus: /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/share/roseus/ros/book_grab/manifest.l
 
 
+/home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/share/roseus/ros/book_grab/srv/try_getin.l: /opt/ros/melodic/lib/geneus/gen_eus.py
+/home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/share/roseus/ros/book_grab/srv/try_getin.l: /home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/srv/try_getin.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from book_grab/try_getin.srv"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/srv/try_getin.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p book_grab -o /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/share/roseus/ros/book_grab/srv
+
 /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/share/roseus/ros/book_grab/srv/hh_eye.l: /opt/ros/melodic/lib/geneus/gen_eus.py
 /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/share/roseus/ros/book_grab/srv/hh_eye.l: /home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/srv/hh_eye.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from book_grab/hh_eye.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from book_grab/hh_eye.srv"
 	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/srv/hh_eye.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p book_grab -o /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/share/roseus/ros/book_grab/srv
 
 /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/share/roseus/ros/book_grab/manifest.l: /opt/ros/melodic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp manifest code for book_grab"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp manifest code for book_grab"
 	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/share/roseus/ros/book_grab book_grab std_msgs
 
 book_grab_generate_messages_eus: CMakeFiles/book_grab_generate_messages_eus
+book_grab_generate_messages_eus: /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/share/roseus/ros/book_grab/srv/try_getin.l
 book_grab_generate_messages_eus: /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/share/roseus/ros/book_grab/srv/hh_eye.l
 book_grab_generate_messages_eus: /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/share/roseus/ros/book_grab/manifest.l
 book_grab_generate_messages_eus: CMakeFiles/book_grab_generate_messages_eus.dir/build.make

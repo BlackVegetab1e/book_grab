@@ -1,0 +1,13 @@
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/try_getin_by_force.cpp:[m[K In function ‘[01m[Kvoid chatch_force(const ConstPtr&)[m[K’:
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/try_getin_by_force.cpp:9:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst ConstPtr {aka const class boost::shared_ptr<const geometry_msgs::Vector3Stamped_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kvector[m[K’
+     force_x = force.[01;31m[Kvector[m[K.x;
+                     [01;31m[K^~~~~~[m[K
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/try_getin_by_force.cpp:10:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst ConstPtr {aka const class boost::shared_ptr<const geometry_msgs::Vector3Stamped_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kvector[m[K’
+     force_y = force.[01;31m[Kvector[m[K.y;
+                     [01;31m[K^~~~~~[m[K
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/try_getin_by_force.cpp:11:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst ConstPtr {aka const class boost::shared_ptr<const geometry_msgs::Vector3Stamped_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kvector[m[K’
+     force_z = force.[01;31m[Kvector[m[K.z;
+                     [01;31m[K^~~~~~[m[K
+make[2]: *** [CMakeFiles/try_getin_by_force.dir/src/try_getin_by_force.cpp.o] Error 1
+make[1]: *** [CMakeFiles/try_getin_by_force.dir/all] Error 2
+make: *** [all] Error 2

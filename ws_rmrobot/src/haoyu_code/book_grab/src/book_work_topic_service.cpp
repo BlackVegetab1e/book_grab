@@ -93,17 +93,17 @@ void book_move(const geometry_msgs::Pose::ConstPtr& msg_p)
 {      
 
     geometry_msgs::Pose end_points = dummy_Pose_to_book_frame_Pose(arm_prt->getCurrentPose("Link6").pose);
-    if(msg_p->position.x>0.20 || msg_p->position.x<0)
+    if(msg_p->position.x>0.20 || msg_p->position.x<-0.05)
     {
         ROS_ERROR("x_direction arm_out_of_flexbile_range____haoyu define");
         return;
     }
-    if(msg_p->position.y>0 || msg_p->position.y<-0.20)
+    if(msg_p->position.y>0.05 || msg_p->position.y<-0.20)
     {
         ROS_ERROR("y_direction arm_out_of_flexbile_range____haoyu define");
         return;
     }
-    if(msg_p->position.z>0.20 || msg_p->position.z<0)
+    if(msg_p->position.z>0.25 || msg_p->position.z<-0.05)
     {
         ROS_ERROR("z_direction arm_out_of_flexbile_range____haoyu define");
         return;
@@ -129,9 +129,22 @@ void eye_pose_book_frame_move_tip_toouch(const geometry_msgs::Pose::ConstPtr& ey
     eye_pose_stamped.header.seq = 0;
     eye_pose_stamped.header.stamp = ros::Time::now();
     eye_pose_stamped.header.frame_id = "LeftCam";
+    tip_pose = buffer_ptr->transform(eye_pose_stamped, "grabber_tip_L").pose;
+    move_based_on_now(tip_pose);
+}
+void eye_pose_book_frame_move_hand_toouch(const geometry_msgs::Pose::ConstPtr& eye_pose)
+{
+    geometry_msgs::PoseStamped eye_pose_stamped;
+    geometry_msgs::Pose tip_pose;
+    eye_pose_stamped.pose = *eye_pose;
+    eye_pose_stamped.header.seq = 0;
+    eye_pose_stamped.header.stamp = ros::Time::now();
+    eye_pose_stamped.header.frame_id = "LeftCam";
     tip_pose = buffer_ptr->transform(eye_pose_stamped, "grabber_tip").pose;
     move_based_on_now(tip_pose);
 }
+
+
 
 
 void move_based_on_now(const geometry_msgs::Pose &step)
@@ -153,7 +166,7 @@ void move_based_on_now(const geometry_msgs::Pose &step)
         ROS_ERROR("y_direction arm_out_of_flexbile_range____haoyu define%f", target_pose.position.y);
         return;
     }
-    if(target_pose.position.z>0.20 || target_pose.position.z<0)
+    if(target_pose.position.z>0.25 || target_pose.position.z<0)
     {
         ROS_ERROR("z_directionarm_out_of_flexbile_range____haoyu define%f", target_pose.position.z);
         return;
@@ -252,9 +265,39 @@ void book_rotate_x(const std_msgs::Float32::ConstPtr& rad)
     Cartesian_move(waypoints);
 }
 
+void book_rotate_x_tip(const std_msgs::Float32::ConstPtr& rad)
+{
+    geometry_msgs::TransformStamped trans = buffer_ptr->lookupTransform("grabber_tip_L","Link6",ros::Time(0), ros::Duration(1));
+    double length = sqrt(trans.transform.translation.y*trans.transform.translation.y
+                     + trans.transform.translation.z*trans.transform.translation.z);
+    double init_angle = atan2(abs(trans.transform.translation.z),abs(trans.transform.translation.y));
+
+
+    double execuate_angle = init_angle - rad->data;
+    
+    geometry_msgs::PoseStamped aim_pose,aim_Link6_pose;
+    aim_pose.header.frame_id = "grabber_tip_L";
+    aim_pose.header.stamp = ros::Time::now();
+    aim_pose.pose.position.x = 0;
+    aim_pose.pose.position.y = length * cos(execuate_angle);
+    aim_pose.pose.position.z = -length * sin(execuate_angle);
+    Quaternion target_orientation('x',rad->data);
+    aim_pose.pose.orientation = target_orientation.get_orientation();
+
+    aim_Link6_pose = buffer_ptr->transform(aim_pose, "dummy",ros::Duration(1));
+
+
+    std::vector<geometry_msgs::Pose> waypoints;    
+	waypoints.push_back(aim_Link6_pose.pose);
+    Cartesian_move(waypoints);
+
+
+
+}
+
 void Cartesian_move(std::vector<geometry_msgs::Pose> &waypoints)
 {
-
+    
     moveit_msgs::RobotTrajectory trajectory;
 	const double jump_threshold = 0.0;
 	const double eef_step = 0.01;
@@ -289,7 +332,10 @@ void Cartesian_move(std::vector<geometry_msgs::Pose> &waypoints)
     }
 }
 
-
+void test_fun(const std_msgs::Bool::ConstPtr& msg_p)
+{
+    // arm_prt->setEndEffector("grabber_tip");
+}
 
 int main(int argc, char** argv)
 {
@@ -324,11 +370,14 @@ int main(int argc, char** argv)
     ros::Subscriber sub_init = nh.subscribe<std_msgs::Bool>("book_frame_init", 10, init_work_frame);
     ros::Subscriber sub_Pose = nh.subscribe<geometry_msgs::Pose>("book_frame_move_parally",10, book_move);
     ros::Subscriber touch_with_tip = nh.subscribe<geometry_msgs::Pose>("eye_pose_book_frame_move_tip_toouch",10, eye_pose_book_frame_move_tip_toouch);
+    ros::Subscriber touch_with_hand = nh.subscribe<geometry_msgs::Pose>("eye_pose_book_frame_move_hand_toouch",10, eye_pose_book_frame_move_hand_toouch);
     ros::Subscriber rotate = nh.subscribe<std_msgs::Float32>("rotate_around_y",10, book_rotate);
     ros::Subscriber rotate_x = nh.subscribe<std_msgs::Float32>("rotate_around_x",10, book_rotate_x);
+    ros::Subscriber rotate_x_tip = nh.subscribe<std_msgs::Float32>("rotate_around_x_tip",10, book_rotate_x_tip);
     ros::Subscriber straight_forward = nh.subscribe<std_msgs::Bool>("point_to_straight",10, point_to_straight);
     ros::Subscriber step_move_rec = nh.subscribe<geometry_msgs::Pose>("step_move",10, step_move);
     ros::Subscriber swing = nh.subscribe<std_msgs::Bool>("hang_swing",10, hang_swing);
+    ros::Subscriber test = nh.subscribe<std_msgs::Bool>("test",10, test_fun);
 
 
     ros::waitForShutdown();

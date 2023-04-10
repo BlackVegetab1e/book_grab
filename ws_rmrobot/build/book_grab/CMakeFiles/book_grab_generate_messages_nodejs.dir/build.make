@@ -53,15 +53,22 @@ CMAKE_BINARY_DIR = /home/ros/haoyu/ws_rmrobot/build/book_grab
 # Include the progress variables for this target.
 include CMakeFiles/book_grab_generate_messages_nodejs.dir/progress.make
 
+CMakeFiles/book_grab_generate_messages_nodejs: /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/share/gennodejs/ros/book_grab/srv/try_getin.js
 CMakeFiles/book_grab_generate_messages_nodejs: /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/share/gennodejs/ros/book_grab/srv/hh_eye.js
 
 
+/home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/share/gennodejs/ros/book_grab/srv/try_getin.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
+/home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/share/gennodejs/ros/book_grab/srv/try_getin.js: /home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/srv/try_getin.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from book_grab/try_getin.srv"
+	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/srv/try_getin.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p book_grab -o /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/share/gennodejs/ros/book_grab/srv
+
 /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/share/gennodejs/ros/book_grab/srv/hh_eye.js: /opt/ros/melodic/lib/gennodejs/gen_nodejs.py
 /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/share/gennodejs/ros/book_grab/srv/hh_eye.js: /home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/srv/hh_eye.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from book_grab/hh_eye.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ros/haoyu/ws_rmrobot/build/book_grab/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from book_grab/hh_eye.srv"
 	catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/srv/hh_eye.srv -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -p book_grab -o /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/share/gennodejs/ros/book_grab/srv
 
 book_grab_generate_messages_nodejs: CMakeFiles/book_grab_generate_messages_nodejs
+book_grab_generate_messages_nodejs: /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/share/gennodejs/ros/book_grab/srv/try_getin.js
 book_grab_generate_messages_nodejs: /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/share/gennodejs/ros/book_grab/srv/hh_eye.js
 book_grab_generate_messages_nodejs: CMakeFiles/book_grab_generate_messages_nodejs.dir/build.make
 

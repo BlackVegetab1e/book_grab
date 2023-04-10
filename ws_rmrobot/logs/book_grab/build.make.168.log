@@ -1,0 +1,38 @@
+[  0%] Built target std_msgs_generate_messages_nodejs
+[ 10%] Built target force_receive
+[ 14%] Built target quaternion_haoyu
+[ 21%] Built target test_grab
+[ 21%] Built target std_msgs_generate_messages_py
+[ 21%] Built target std_msgs_generate_messages_eus
+[ 21%] Built target _book_grab_generate_messages_check_deps_try_getin
+[ 21%] Built target std_msgs_generate_messages_cpp
+[ 21%] Built target _book_grab_generate_messages_check_deps_hh_eye
+[ 21%] Built target std_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target try_getin_by_force[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/try_getin_by_force.dir/src/try_getin_by_force.cpp.o[0m
+[ 32%] Built target grab_motion
+[ 39%] Built target haoyu_frame_pub
+[ 46%] Built target book_work_topic_service
+[ 53%] Built target play
+[ 60%] Built target book_grab_generate_messages_nodejs
+[ 71%] Built target book_grab_generate_messages_py
+[ 82%] Built target book_grab_generate_messages_eus
+[ 89%] Built target book_grab_generate_messages_cpp
+[ 96%] Built target book_grab_generate_messages_lisp
+[ 96%] Built target book_grab_generate_messages
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/try_getin_by_force.cpp:[m[K In function ‘[01m[Kvoid chatch_force(const ConstPtr&)[m[K’:
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/try_getin_by_force.cpp:9:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst ConstPtr {aka const class boost::shared_ptr<const geometry_msgs::Vector3Stamped_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kvector[m[K’
+     force_x = force.[01;31m[Kvector[m[K.x;
+                     [01;31m[K^~~~~~[m[K
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/try_getin_by_force.cpp:10:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst ConstPtr {aka const class boost::shared_ptr<const geometry_msgs::Vector3Stamped_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kvector[m[K’
+     force_y = force.[01;31m[Kvector[m[K.y;
+                     [01;31m[K^~~~~~[m[K
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/try_getin_by_force.cpp:11:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst ConstPtr {aka const class boost::shared_ptr<const geometry_msgs::Vector3Stamped_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kvector[m[K’
+     force_z = force.[01;31m[Kvector[m[K.z;
+                     [01;31m[K^~~~~~[m[K
+CMakeFiles/try_getin_by_force.dir/build.make:62: recipe for target 'CMakeFiles/try_getin_by_force.dir/src/try_getin_by_force.cpp.o' failed
+make[2]: *** [CMakeFiles/try_getin_by_force.dir/src/try_getin_by_force.cpp.o] Error 1
+CMakeFiles/Makefile2:1579: recipe for target 'CMakeFiles/try_getin_by_force.dir/all' failed
+make[1]: *** [CMakeFiles/try_getin_by_force.dir/all] Error 2
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

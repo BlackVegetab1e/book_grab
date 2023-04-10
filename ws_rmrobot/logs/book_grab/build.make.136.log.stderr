@@ -1,0 +1,18 @@
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/book_work_topic_service.cpp:[m[K In function ‘[01m[Kvoid book_rotate_x(const ConstPtr&)[m[K’:
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/book_work_topic_service.cpp:255:6:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kvoid book_rotate_x(const ConstPtr&)[m[K’
+ void [01;31m[Kbook_rotate_x[m[K(const std_msgs::Float32::ConstPtr& rad)
+      [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/book_work_topic_service.cpp:235:6:[m[K [01;36m[Knote: [m[K‘[01m[Kvoid book_rotate_x(const ConstPtr&)[m[K’ previously defined here
+ void [01;36m[Kbook_rotate_x[m[K(const std_msgs::Float32::ConstPtr& rad)
+      [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/book_work_topic_service.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/book_work_topic_service.cpp:344:94:[m[K [01;31m[Kerror: [m[K‘[01m[Kbook_rotate_x_tip[m[K’ was not declared in this scope
+     ros::Subscriber rotate_x_tip = nh.subscribe<std_msgs::Float32>("rotate_around_x_tip",10, [01;31m[Kbook_rotate_x_tip[m[K);
+                                                                                              [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/book_work_topic_service.cpp:344:94:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kbook_rotate_x[m[K’
+     ros::Subscriber rotate_x_tip = nh.subscribe<std_msgs::Float32>("rotate_around_x_tip",10, [01;36m[Kbook_rotate_x_tip[m[K);
+                                                                                              [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+                                                                                              [32m[Kbook_rotate_x[m[K
+make[2]: *** [CMakeFiles/book_work_topic_service.dir/src/book_work_topic_service.cpp.o] Error 1
+make[1]: *** [CMakeFiles/book_work_topic_service.dir/all] Error 2
+make: *** [all] Error 2
