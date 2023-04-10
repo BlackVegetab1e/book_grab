@@ -15,10 +15,57 @@ void chatch_force(const geometry_msgs::Vector3Stamped::ConstPtr &force)
 
 bool get_in(book_grab::try_getin::Request &req,book_grab::try_getin::Response& resp)
 {
-    
+    geometry_msgs::Pose forward_try;
+    forward_try.position.x = 0;
+    forward_try.position.y = 0;
+    forward_try.position.z = 0.02;
+    step_move_ptr->publish(forward_try);
+    ros::Duration(3).sleep();
 
+    bool collection_detected = false;
+    bool successful = false;
+    if(force_z > 0.3)
+    {
+        // collection detected
+        collection_detected = true;
+    }
+    else
+    {
+        successful = true;
+    }
 
+    while(collection_detected)
+    {
+        forward_try.position.x = 0;
+        forward_try.position.y = 0.01;
+        forward_try.position.z = 0;
+        step_move_ptr->publish(forward_try);
+        ros::Duration(1).sleep();
 
+        if(force_x > 0.2)
+        {
+            successful = true;
+            break;
+        }
+        if(force_z<0.3)
+        {
+            forward_try.position.x = 0;
+            forward_try.position.y = 0;
+            forward_try.position.z = 0.005;
+            step_move_ptr->publish(forward_try);
+            ros::Duration(1).sleep();
+        }
+
+    }
+
+    if(successful)
+    {
+        forward_try.position.x = 0;
+        forward_try.position.y = 0;
+        forward_try.position.z = 0.03;
+        step_move_ptr->publish(forward_try);
+        ros::Duration(1).sleep();
+    }
 }
 
 
