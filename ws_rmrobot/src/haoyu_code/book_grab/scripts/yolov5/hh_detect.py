@@ -16,7 +16,7 @@ def hh_sb(req):
 if __name__ == "__main__":
     rospy.init_node("hh_eye_detect")
 
-    camera = cv2.VideoCapture(2)
+    camera = cv2.VideoCapture(0)
     ret, frame = camera.read()
     print(ret)
     if not ret:

@@ -1,0 +1,8 @@
+<launch>
+	<include file="$(find rm_control)/launch/rm_control.launch"/>
+	<include file="$(find rm_bringup)/launch/rm_robot.launch"/>
+	<node pkg="book_grab" name="force_receive" type="force_receive" output="screen"> 
+	</node>
+
+
+</launch>

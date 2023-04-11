@@ -79,11 +79,17 @@ if __name__ == "__main__":
     rospy.sleep(5)
 
     data_pose.position.x = 0
-    data_pose.position.y = 0.015
+    data_pose.position.y = 0
     data_pose.position.z = 0.03
     pub_step_move.publish(data_pose)
 
-    rospy.sleep(5)
+    rospy.sleep(2)
+    data_pose.position.x = 0
+    data_pose.position.y = 0.015
+    data_pose.position.z = 0
+    pub_step_move.publish(data_pose)
+
+    rospy.sleep(2)
 
 
 
@@ -127,13 +133,14 @@ if __name__ == "__main__":
 
     rospy.sleep(5)
 
-    data_pose.position.x = -0.02
+    data_pose.position.x = -0.04
     data_pose.position.y = -0.075
     data_pose.position.z = 0
     data_pose.orientation.w = 1
     pub_Pose.publish(data_pose)
 
     rospy.sleep(5)
+    
 
     pub_straight_forward.publish(True)
     rospy.sleep(3)
@@ -145,7 +152,7 @@ if __name__ == "__main__":
     pub_Gripper_Set.publish(data_gripper_set)
     rospy.sleep(1)
 
-    
+    BOOK_POSE = get_book_pose.call(True)
     data_pose.position.x = BOOK_POSE.x
     data_pose.position.y = BOOK_POSE.y + 0.04
     data_pose.position.z = BOOK_POSE.z

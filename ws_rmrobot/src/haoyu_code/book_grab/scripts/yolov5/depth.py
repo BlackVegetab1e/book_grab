@@ -135,8 +135,26 @@ def the_master_piece_of_hh(camera):
     # 计算出的threeD，需要乘以16，才等于现实中的距离
 
     threeD = threeD * 16
-    # print(threeD)
-    print("xyza是：", threeD[y][x][0], threeD[y][x][1], threeD[y][x][2], a)
+    # # print(threeD)
+    # print("xyza是：", threeD[y][x][0], threeD[y][x][1], threeD[y][x][2], a)
+    list1 = [-10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    xlist = []
+    ylist = []
+    zlist = []
+    for i in list1:
+        for j in list1:
+            if abs(threeD[y+j][x+i][2]) < 500:
+                xlist.append(threeD[y+j][x+i][0])
+                ylist.append(threeD[y+j][x+i][1])
+                zlist.append(threeD[y+j][x+i][2])
+                # print(threeD[y][x+i][2])
+    if len(xlist) == 0:
+        print("HXSB\n\n\n")
+    xtrue = sum(xlist)/len(xlist)
+    ytrue = sum(ylist)/len(ylist)
+    ztrue = sum(zlist)/len(zlist)
+    
+    print("xyza是：", xtrue, ytrue, ztrue, a)
 
     # cv2.setMouseCallback("depth", x, y, threeD)
     # cv2.imshow("depth_color", dis_color)

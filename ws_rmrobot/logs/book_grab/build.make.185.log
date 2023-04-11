@@ -1,0 +1,21 @@
+[  7%] Built target test_grab
+[ 14%] Built target quaternion_haoyu
+[ 14%] Built target std_msgs_generate_messages_nodejs
+[ 21%] Built target force_receive
+[ 21%] Built target _book_grab_generate_messages_check_deps_hh_eye
+[ 21%] Built target std_msgs_generate_messages_eus
+[ 21%] Built target std_msgs_generate_messages_py
+[ 21%] Built target std_msgs_generate_messages_cpp
+[ 21%] Built target std_msgs_generate_messages_lisp
+[ 28%] Built target try_getin_by_force
+[ 28%] Built target _book_grab_generate_messages_check_deps_try_getin
+[ 35%] Built target grab_motion
+[ 42%] Built target haoyu_frame_pub
+[ 50%] Built target play
+[ 57%] Built target book_work_topic_service
+[ 64%] Built target book_grab_generate_messages_nodejs
+[ 75%] Built target book_grab_generate_messages_py
+[ 85%] Built target book_grab_generate_messages_eus
+[ 92%] Built target book_grab_generate_messages_lisp
+[100%] Built target book_grab_generate_messages_cpp
+[100%] Built target book_grab_generate_messages

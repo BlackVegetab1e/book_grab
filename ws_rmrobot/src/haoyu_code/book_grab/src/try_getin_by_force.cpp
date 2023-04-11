@@ -16,21 +16,41 @@ void chatch_force(const geometry_msgs::Vector3Stamped::ConstPtr &force)
 bool get_in(book_grab::try_getin::Request &req,book_grab::try_getin::Response& resp)
 {
     geometry_msgs::Pose forward_try;
+    ROS_INFO("force_z%f",force_z);
+    while(force_z <=0)
+    {
+        forward_try.position.x = 0;
+        forward_try.position.y = 0;
+        forward_try.position.z = 0.003;
+        step_move_ptr->publish(forward_try);
+        ros::Duration(3).sleep();
+        
+    }
+    ROS_INFO("touch detected");
+
     forward_try.position.x = 0;
     forward_try.position.y = 0;
-    forward_try.position.z = 0.02;
+    forward_try.position.z = 0.006;
     step_move_ptr->publish(forward_try);
+
+    ROS_INFO("forward");
     ros::Duration(3).sleep();
+
 
     bool collection_detected = false;
     bool successful = false;
+    ROS_INFO("force_z%f",force_z);
+
+
     if(force_z > 0.3)
     {
         // collection detected
+        ROS_INFO("collection detected");
         collection_detected = true;
     }
     else
     {
+        ROS_INFO("no collection ");
         successful = true;
     }
 
@@ -40,15 +60,20 @@ bool get_in(book_grab::try_getin::Request &req,book_grab::try_getin::Response& r
         forward_try.position.y = 0.01;
         forward_try.position.z = 0;
         step_move_ptr->publish(forward_try);
-        ros::Duration(1).sleep();
+        ros::Duration(3).sleep();
+        ROS_INFO("x: %f z: %f",force_x,force_z);
 
-        if(force_x > 0.2)
+        ROS_INFO("x need forward");
+
+        if(force_x > 0.15)
         {
+            ROS_INFO("collection x");
             successful = true;
             break;
         }
-        if(force_z<0.3)
+        if(force_z<0.2)
         {
+            ROS_INFO("z need forward");
             forward_try.position.x = 0;
             forward_try.position.y = 0;
             forward_try.position.z = 0.005;
@@ -60,9 +85,10 @@ bool get_in(book_grab::try_getin::Request &req,book_grab::try_getin::Response& r
 
     if(successful)
     {
+        ROS_INFO("successful ");
         forward_try.position.x = 0;
         forward_try.position.y = 0;
-        forward_try.position.z = 0.03;
+        forward_try.position.z = 0.02;
         step_move_ptr->publish(forward_try);
         ros::Duration(1).sleep();
     }

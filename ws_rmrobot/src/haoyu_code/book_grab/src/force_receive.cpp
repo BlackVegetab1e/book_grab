@@ -10,6 +10,7 @@ double string2force(uint8_t *receive_data, int begin, int char_at_offset, int da
 int main (int argc, char** argv){
     ros::init(argc, argv, "force_receive");
     ros::NodeHandle nh;
+    bool flag = true;
 
     try
     {
@@ -45,6 +46,7 @@ int main (int argc, char** argv){
     while(ros::ok()){
         if(force_serial.available()>30)
         {
+            // ROS_INFO("get");
             int available = force_serial.available();
 
             uint8_t receive_data[99];
@@ -88,9 +90,23 @@ int main (int argc, char** argv){
                 force_stamped.vector.z = force_z;
 
                 pub_force.publish(force_stamped);
+                if(flag)
+                {
+                    ROS_INFO("FORCE READY");
+                    flag = false;
+                }
+                
                 
             }
+            else
+            {
+    
+                force_serial.read(receive_data,force_serial.available());
+                ros::Duration(1).sleep();
+
+            }
         }
+        
     }
 
 

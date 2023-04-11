@@ -5,6 +5,9 @@ CMakeFiles/try_getin_by_force.dir/src/try_getin_by_force.cpp.o: /home/ros/haoyu/
 CMakeFiles/try_getin_by_force.dir/src/try_getin_by_force.cpp.o: /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/include/book_grab/try_getinRequest.h
 CMakeFiles/try_getin_by_force.dir/src/try_getin_by_force.cpp.o: /home/ros/haoyu/ws_rmrobot/devel/.private/book_grab/include/book_grab/try_getinResponse.h
 CMakeFiles/try_getin_by_force.dir/src/try_getin_by_force.cpp.o: /home/ros/haoyu/ws_rmrobot/src/haoyu_code/book_grab/src/try_getin_by_force.cpp
+CMakeFiles/try_getin_by_force.dir/src/try_getin_by_force.cpp.o: /opt/ros/melodic/include/geometry_msgs/Point.h
+CMakeFiles/try_getin_by_force.dir/src/try_getin_by_force.cpp.o: /opt/ros/melodic/include/geometry_msgs/Pose.h
+CMakeFiles/try_getin_by_force.dir/src/try_getin_by_force.cpp.o: /opt/ros/melodic/include/geometry_msgs/Quaternion.h
 CMakeFiles/try_getin_by_force.dir/src/try_getin_by_force.cpp.o: /opt/ros/melodic/include/geometry_msgs/Vector3.h
 CMakeFiles/try_getin_by_force.dir/src/try_getin_by_force.cpp.o: /opt/ros/melodic/include/geometry_msgs/Vector3Stamped.h
 CMakeFiles/try_getin_by_force.dir/src/try_getin_by_force.cpp.o: /opt/ros/melodic/include/ros/advertise_options.h
